@@ -103,10 +103,10 @@
                         <div class="small-2 columns">
                             <input id="affiliate" name="affiliate" type="hidden" value="developer.dol.gov"/>
 
-                            <input type="image" src="/img/icon-search.png" alt="Search"
+                            <input type="image" src="{{ site.baseurl }}/img/icon-search.png" alt="Search"
                                    class="usagov-submit">
                             <!--
-                            <input type="image"  src="/img/beta_ribbon.png"  vspace="4"  alt="Search DOL" class="usagov-submit">
+                            <input type="image"  src="{{ site.baseurl }}/img/beta_ribbon.png"  vspace="4"  alt="Search DOL" class="usagov-submit">
                             -->
                         </div>
                     </form>
@@ -124,18 +124,18 @@
     <ul class="small-block-grid-3 text-center">
   
 	<li>
-	<p class="text-center"><img alt="Run Quarry" src="/img/Computer.png" />
+	<p class="text-center"><img alt="Run Quarry" src="/{{ site.baseurl }}img/Computer.png" />
         <h4 class="text-center"><strong>Make sure you have what you need to run Quarry</strong></h4></p>
 		<a href="/" class="button ">Requirements</a>
 	</li>
 	<li>
-	<p class="text-center"><img alt="Run Quarry" src="/img/Download.png"  />
+	<p class="text-center"><img alt="Run Quarry" src="/{{ site.baseurl }}img/Download.png"  />
         <h4 class="text-center"><strong>Everything check out?<br> Great.</strong></h4></p>
 				<a href="https://github.com/USDepartmentofLabor/Quarry" class="button ">Download</a>
 
 	</li>
 	<li>
-	<p class="text-center"><img alt="Run Quarry" src="/img/Install.png"  />
+	<p class="text-center"><img alt="Run Quarry" src="/{{ site.baseurl }}img/Install.png"  />
         <h4 class="text-center"><strong>Finally, you can now <br> begin</strong></h4></p>
 				<a href="#" class="button ">Install</a>
 
@@ -148,7 +148,7 @@
     <!-- Start Footer One -->
     <div role="contentinfo">
         <div class="row footer-one">
-            <div class="large-5 columns hide-for-small"> <a href="http://dol.gov"> <img src="/img/dol-logo-white.png" alt="U.S.Department of Labor"/> <span class="header-logo-type-white">UNITED STATES <br>
+            <div class="large-5 columns hide-for-small"> <a href="http://dol.gov"> <img src="{{ site.baseurl }}/img/dol-logo-white.png" alt="U.S.Department of Labor"/> <span class="header-logo-type-white">UNITED STATES <br>
     DEPARTMENT OF LABOR </span> </a> </div>
             <div class="large-3 columns">
                 <p class="footer-info1 a-bottom"><a href="http://www.dol.gov/dol/contact/">Contact Us </a></p>
