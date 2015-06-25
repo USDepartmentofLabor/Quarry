@@ -1,0 +1,196 @@
+.post_title_dataset {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+}
+
+.menu_title_dataset {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+    margin-top: 20px;
+
+}
+
+.menu_title_dataset_img {
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+}
+
+.post_content_dataset a:hover {
+    text-decoration: underline;
+}
+.post_content_dataset,
+.post_content_dataset p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+}
+
+.post_content_dataset h2, {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+}
+
+.post_content_dataset h2 a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.anchorlinks h2 a,
+.anchorlinks h2 a:hover,
+.anchorlinks h3 a,
+.anchorlinks h3 a:hover,
+.anchorlinks a,
+.anchorlinks a:hover {
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+.post_content_dataset h2 a:hover {
+    text-decoration: none;
+}
+
+.post_content_dataset h3,
+.post_content_dataset h3 a,
+.post_content_dataset h3 a:hover {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.post_content_dataset tr th:nth-of-type(3),
+.post_content_dataset tr td:nth-of-type(2) {
+    white-space: nowrap !important;
+}
+
+.post_content_dataset tr:nth-child(even) {
+    background-color: #F3F3F3;
+}
+
+.post_content_dataset thead tr {
+    background-color: #D9D9D9;
+}
+
+.accordion .accordion-navigation > a, .accordion dd > a  {
+    background-color: white;
+    border-bottom: solid;
+    border-width: 1px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.accordion .accordion-navigation.active > a, .accordion dd.active > a {
+    border-left: solid;
+    background-color: white;
+    border-left-color: darkred;
+    border-left-width: 10px;
+}
+
+.content a {
+    font-size: 14px;
+    color: black;
+}
+
+.content 
+
+.content a:hover {
+    color: #0078a0 !important;
+    text-decoration: underline !important;
+}
+
+.content a:active,
+.current_item,
+.current_item a{
+    color: #black;
+    font-weight: bold;
+}
+
+article {
+}
+.button_dataset { margin-right: .5em;}
+table { margin-bottom: 2em; border: 0;}
+th { font-weight: normal;}
+.tbl_hd { background: #e3e3e3;}
+
+#wrap_manual { padding: 1em; margin: 0 1em; }
+
+.mbl_tbl { margin: 1.5em 0 1em 0;}
+.mbl_tbl p { margin: 0; padding-bottom: .5em;}
+.mbl-strng { font-weight: bold;}
+.even_row, .odd_row { width: 100%; padding: 1em;}
+.odd_row { background: #e3e3e3;}
+hr { border-top: 3px solid #3d3d3d;}
+.error_note { color: #900;}
+
+@media screen and (max-width: 700px) { 
+	#wrap { width: 85%;}
+	.dsktp_tbl { display: none;}
+	.mbl_tbl { display: block;}
+}	
+
+@media screen and (min-width: 705px) { 
+	#wrap { width: 75%;}
+	dsktp_tbl { display: block; width:95%;}
+	.mbl_tbl { display: none;}
+}
+
+.panel.callout{
+    background-color: #E9F3E6;
+}
+.panel.feature{
+    background-color: #E4F2FD; 
+}
+.panel.requirement{
+    background-color: #FFF2E1; 
+}
+.panel.documentation{
+    background-color: #EEEEEE; 
+}
+.panel h2{
+	font-size: 160%;
+	font-weight: 700;
+}
+
+.tabs-content > .content{
+	padding: 1.5rem;
+}
+.tabs-content{
+	border-top:solid black 5px;	
+}
+.tabs li.active a, .tabs .tab-title.active a {
+    background-color: #E9F3E6;
+    color: #222222;
+}
+.tabs li.active a, .tabs .tab-title-feature.active a {
+    background-color: #E4F2FD;
+    color: #222222;
+}
+.tabs li.active a, .tabs .tab-title-requirement.active a {
+    background-color: #FFF2E1;
+    color: #222222;
+}
+.tabs li.active a, .tabs .tab-title-documentation.active a {
+    background-color: #EEEEEE;
+    color: #222222;
+}
+
+.tabs li a, .tabs .tab-title a {
+    background-color: white;
+    color: #222222;
+}

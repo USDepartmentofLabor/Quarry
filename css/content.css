@@ -1,0 +1,526 @@
+/*
+developer.dol.gov
+*/
+/* 
+    Created on : Jan 20, 2015, 10:45:53 AM
+    Author     : Neil Neyman <neyman.neil.e@dol.gov>
+*/
+.valign_parent {
+    display: table;
+    width: 100%;
+}
+
+#choose {
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/devs_coffee.jpg");
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.hometext {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.hometext p {
+    font-size: 22px;
+    font-weight:300;
+    color: white;
+}
+
+
+.hometext h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.button_tran {
+    background-color: black;
+    opacity: .8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    margin: 0 20px;
+    width: 200px;
+    padding: 15px 0;
+}
+
+.button_tran_left {
+    background-color: black;
+    opacity: .8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    width: 200px;
+    float: left;
+    margin-left: 20px;
+}
+
+.button_dol {
+    background-color: black;
+    opacity: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+
+    width: 150px;
+    padding: 15px 0;
+}
+
+.button_dol_left {
+    background-color: black;
+    opacity: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    text-align: left;
+    width: 150px;
+    padding: 15px 0;
+}
+
+.button_ls {
+    background-color: black;
+    opacity: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+
+    width: 100px;
+    padding: 15px 0;
+}
+
+.button_dataset {
+    background-color: black;
+    opacity: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+
+    width: 150px;
+    padding: 15px 0;
+}
+
+.button_wide {
+    background-color: black;
+    opacity: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    padding: 15px 15px;
+}
+
+#choose .button:hover, #stats .button:hover, #grab .button:hover,.button_tran:hover, .button_dol:hover,
+.button_dataset:hover,
+.button_tran_left:hover,
+.button_ls:hover,
+.button_wide:hover {
+    background-color: #333333;
+}
+
+
+.cb2 {
+    position:relative; right: 00px;
+}
+
+.cb1 {
+    position:relative; left: 00px;
+}
+
+
+#stats {
+    background-color: #ffffff;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    text-align: center;
+}
+
+.stats_dol {
+
+    background-color: #ffffff;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    text-align: center;
+
+}
+
+.stats_box {
+    height: 500px;
+    padding: 35px 0;
+}
+
+.stats_dol p {
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    text-align: left;
+    
+}
+
+.stats_dol h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+.how_background h1,
+.how_experienced h1
+{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+#stats table {
+    border: none;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    table-layout: fixed;
+    width: 100%;
+   
+}
+
+
+#cpi {
+    width: 100%;
+    height: 500px;
+    color: white;
+    
+}
+
+
+
+#cpi table {
+    border: none;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/cpi_back.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+   
+}
+
+.image_box {
+    padding: 75px 0;
+    height: 450px;
+}
+.cpi_background {
+    background: url("../img/cpi_back.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cpi_back.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../img/cpi_back.jpg,sizingMethod=scale)";
+    color: white;
+    text-align: center;
+}
+.cpi_background p {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.cpi_background h1 {
+    text-align: left;
+    color: white;
+    font-weight:bold;
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+#grab {
+    width: 100%;
+    background-color: #EEEEEE;
+    text-align: center;
+
+}
+
+.lefttext p {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    font-size: 22px;
+    color: black;
+    
+}
+
+#grab h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    font-size: 30px;
+    color: black;
+    
+}
+
+.grabdiv {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    font-size: 20px;
+    color: black;
+}
+
+.grabdiv h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    font-size: 24px;
+    color: black;
+}
+
+#grab img {
+    height: 125px;
+}
+
+.how_background {
+
+    /*background: -webkit-linear-gradient(#58AFC2, #7ca89d); *//* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(#58AFC2, #7ca89d); *//* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(#58AFC2, #7ca89d); *//* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(#58AFC2, #7ca89d); *//* Standard syntax (must be last) */
+    background: #225448;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.how_experienced {
+    /*background: -webkit-linear-gradient(#9dd3c5, #8AE7EF); *//* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(#9dd3c5, #8AE7EF); *//* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(#9dd3c5, #8AE7EF); *//* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(#9dd3c5, #8AE7EF); *//* Standard syntax (must be last) */
+    background: #28577E;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+    
+}
+
+
+#how h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+    
+}
+
+.howdiv {
+    text-align: left;
+    padding: 20px 0;
+    color: white;
+}
+
+.howdiv_c {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+.howdiv p,
+.dol_sub h2,
+.dol_sub h2 a,
+.dol_sub h2 a:link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:200;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.howdiv p
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:200;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.dol_sub p,
+.dol_sub p a,
+.dol_sub p a:link
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.dol_sub h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: black;
+    text-align: left;
+    padding: 0;
+}
+
+.dol_sub h2 a:hover,
+.dol_sub h2 a:active,
+.dol_sub p a:hover,
+.dol_sub p a:active,
+.details a:hover
+{
+    text-decoration: underline;
+}
+
+.dol_sub {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.dol_sub h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+ .howdiv h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: left;
+    color: white;
+}
+
+.how_box_experienced {
+    padding: 10px 10px;
+    height: 400px;
+}
+
+.how_box_beginner {
+    padding: 10px 10px;
+    height: 375px;
+}
+
+
+.custom-alert-box {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background: #0A4366;
+    text-align: center;
+    line-height: 2.5;
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%); /* For mozilla support */
+    -webkit-transform: translateY(-50%); /* For safari support */
+    -ms-transform: translateY(-50%); /* For IE support */
+    -o-transform: translateY(-50%); /* For opera support */
+}
+
+ hr {
+    margin: 17px 0 18px;
+    height: 0;
+    clear: both;
+    border: solid #ddd;
+    border-width: 3px 0 0;
+}
+
+
+.top-bar {
+    background: #E4E4E4;
+    color: black !important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.top-bar-section li a:not(.button) {
+    background: #E4E4E4 !important;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.top-bar-section li a:not(.button):hover {
+    background: #0A4366 !important;
+    color: black;
+}
+
+.top-bar-section ul li.active > a {
+    background: #0A4366 !important;
+    color: black;
+}
+
+.top-bar-section ul li.active > a:hover {
+    background: #0A4366  !important;
+    color: black;
+}
+
+.top-bar-section .has-dropdown > a:after {
+    border-color: #000000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    color: black;
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+    color: black; }
+
+.details
+{
+
+    color: white;
+    text-align: left;
+    
+}
+
+.details a,
+.details a:link {
+    color: white;
+}
+
+.details h1 {
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+
+#non-responsive {
+    width: 1000px;
+    margin: auto;
+
+}
+
+.grab_block {
+    margin-left: 20px;
+}
+
+.anchor {
+    color: black;
+}
+
+.guide_note, .guide_note p {
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 1.25rem;
+}

@@ -1,0 +1,18 @@
+####
+### USE THIS CONFIG FILE TO GENERATE _site for local deployment to QA SERVER
+### at http://developerportal.opadev.dol.gov
+###
+### use command: jekyll build --config qa_deploy.yml
+###
+
+# Site settings
+title: U.S. Department of Labor Developer
+email: neyman.neil.e@dol.gov
+description: > # this means to ignore newlines until "baseurl:"
+  Department of Labor Developer API Site
+baseurl: ""
+url: "http://developer.dol.gov/"
+
+# Build settings
+markdown: rdiscount
+permalink: /:categories/:title
