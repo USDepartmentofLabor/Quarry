@@ -11,12 +11,14 @@
     
 
     <link rel="canonical" href="http://usdepartmentoflabor.github.io/beginners-guide">
-    <!-- css -->
-    <link rel="stylesheet" href="/css/foundation.css" />
-    <link rel="stylesheet" href="/css/dol-style.css" />
-    <link rel="stylesheet" href="/css/content.css" />
-    <link rel="stylesheet" href="/css/post.css" />
-    <link rel="stylesheet" href="/css/syntax.css" />
+    
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/foundation.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/dol-style.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/content.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/post.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/foundation.css" />
+
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300' rel='stylesheet' type='text/css'>
     <script id="_fed_an_ua_tag" src="/js/federated-analytics-developer.js?agency=DOL&amp;subagency=DEVELOPER"></script>
     <script src="/js/modernizr.js"></script>
@@ -64,8 +66,9 @@
         <div class="row top-header" role="banner">
             <div class="large-6 columns"><a href="http://developer.dol.gov/"> <span class="brand"></span>
 
-                <h1 class="header-logo-type">DEVELOPER PORTAL<br/>
-                    UNITED STATES DEPARTMENT OF LABOR</h1>
+                <h1 class="header-logo-type">
+				QUARRY<br/>
+           UNITED STATES DEPARTMENT OF LABOR</h1>
             </a></div>
             <div class="large-2 columns">
                 <div class="social-block right hide-for-small"><a href="http://www.facebook.com/departmentoflabor"
