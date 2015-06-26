@@ -118,7 +118,7 @@ created: 1359560059
 	    <h6>Ubuntu</h6>
 	    <h6>Debian or later with access to REMI and EPEL repositories</h6>
 	    <h6>MySQL or MSSQL</h6>
-	   <a href="http://usdepartmentoflabor.github.io/Quarry/" class="button"><strong>Download Quarry</strong></a>	    
+	   <a href="http://usdepartmentoflabor.github.io/Quarry" class="button"><strong>Download Quarry</strong></a>	    
 	  </div>
 	  <div class="large-6 columns"></div>
 	</div> 	
