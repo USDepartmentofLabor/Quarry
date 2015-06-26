@@ -65,7 +65,7 @@
         <div class="row top-header" role="banner">
             <div class="large-2 columns text-right">
 			</div>
-			<a href="http://developer.dol.gov/"> <span class="brand-white"></span></a>
+			<a href="http://usdepartmentoflabor.github.io/Quarry/"> <span class="brand-white"></span></a>
             <div class="large-10 columns text-left">
                <h1 class="header-logo-type text-left">
 			   QUARRY<br/>
@@ -86,7 +86,7 @@
 	<li>
 	<p class="text-center"><img alt="Run Quarry" src="{{ site.baseurl }}/img/Computer.png" />
         <h4 class="text-center"><strong>Make sure you have what you need to run Quarry</strong></h4></p>
-		<a href="{{ site.baseurl }}/#requirements" class="button ">Requirements</a>
+		<a href="./#panel2-3" class="button ">Requirements</a>
 	</li>
 	<li>
 	<p class="text-center"><img alt="Run Quarry" src="{{ site.baseurl }}/img/Download.png"  />
