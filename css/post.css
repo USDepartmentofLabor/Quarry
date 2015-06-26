@@ -176,15 +176,18 @@ hr { border-top: 3px solid #3d3d3d;}
 .tabs li.active a, .tabs .tab-title.active a {
     background-color: #E9F3E6;
     color: #222222;
+	
 }
 .tabs li.active a, .tabs .tab-title-feature.active a {
     background-color: #E4F2FD;
     color: #222222;
 }
+
 .tabs li.active a, .tabs .tab-title-requirement.active a {
     background-color: #FFF2E1;
     color: #222222;
 }
+
 .tabs li.active a, .tabs .tab-title-documentation.active a {
     background-color: #EEEEEE;
     color: #222222;
@@ -193,4 +196,17 @@ hr { border-top: 3px solid #3d3d3d;}
 .tabs li a, .tabs .tab-title a {
     background-color: white;
     color: #222222;
+}
+
+.tab-title a:hover {
+ text-decoration:none;
+}
+.tab-title-feature a:hover {
+ text-decoration:none;
+}
+.tab-title-requirement a:hover {
+ text-decoration:none;
+}
+.tab-title-documentation a:hover {
+ text-decoration:none;
 }
