@@ -1,0 +1,193 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : Localhost
+Source Server Version : 50620
+Source Host           : localhost:3306
+Source Database       : restdb
+
+Target Server Type    : MYSQL
+Target Server Version : 50620
+File Encoding         : 65001
+
+Date: 2015-06-26 05:41:20
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for access
+-- ----------------------------
+DROP TABLE IF EXISTS `access`;
+CREATE TABLE `access` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `key` varchar(40) NOT NULL DEFAULT '',
+  `controller` varchar(50) NOT NULL DEFAULT '',
+  `date_created` datetime DEFAULT NULL,
+  `date_modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of access
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for api_rdbms
+-- ----------------------------
+DROP TABLE IF EXISTS `api_rdbms`;
+CREATE TABLE `api_rdbms` (
+  `db_id` int(11) NOT NULL AUTO_INCREMENT,
+  `db_slug` varchar(10) DEFAULT NULL,
+  `db_driver` varchar(10) DEFAULT NULL,
+  `db_type` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`db_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of api_rdbms
+-- ----------------------------
+INSERT INTO `api_rdbms` VALUES ('1', 'mysql', 'mysql', 'MySQL');
+INSERT INTO `api_rdbms` VALUES ('2', 'mssql', 'mssql', 'Microsoft SQL');
+INSERT INTO `api_rdbms` VALUES ('3', 'oracle', 'oci8', 'Oracle DB');
+INSERT INTO `api_rdbms` VALUES ('4', 'postgres', 'postgre', 'PostgreSQL');
+
+-- ----------------------------
+-- Table structure for connection_strings
+-- ----------------------------
+DROP TABLE IF EXISTS `connection_strings`;
+CREATE TABLE `connection_strings` (
+  `daas_id` int(11) NOT NULL AUTO_INCREMENT,
+  `daas_rdbms` int(11) NOT NULL,
+  `daas_host` varchar(50) DEFAULT NULL,
+  `daas_instance` varchar(20) DEFAULT NULL,
+  `daas_user` varchar(20) DEFAULT NULL,
+  `daas_passwd` varchar(20) DEFAULT NULL,
+  `daas_dbname` varchar(20) DEFAULT NULL,
+  `daas_table` varchar(100) DEFAULT NULL,
+  `daas_table_alias` varchar(100) DEFAULT NULL,
+  `daas_port` varchar(10) DEFAULT NULL,
+  `daas_method` varchar(100) DEFAULT NULL,
+  `daas_action_clmn` varchar(255) DEFAULT NULL,
+  `daas_sid` varchar(10) DEFAULT NULL,
+  `daas_sname` varchar(20) DEFAULT NULL,
+  `daas_active_group` varchar(10) DEFAULT NULL,
+  `daas_access_link` varchar(255) DEFAULT NULL,
+  `daas_flatfile` text,
+  `date_created` datetime DEFAULT NULL,
+  `date_modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`daas_id`),
+  KEY `hostname_indx` (`daas_host`) USING BTREE,
+  KEY `api_rdbms_fk2` (`daas_id`) USING BTREE,
+  KEY `connection_strings_ibfk_1` (`daas_rdbms`),
+  CONSTRAINT `connection_strings_ibfk_1` FOREIGN KEY (`daas_rdbms`) REFERENCES `api_rdbms` (`db_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of connection_strings
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for keys
+-- ----------------------------
+DROP TABLE IF EXISTS `keys`;
+CREATE TABLE `keys` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `key` varchar(40) NOT NULL,
+  `level` int(2) NOT NULL,
+  `ignore_limits` tinyint(1) NOT NULL DEFAULT '0',
+  `is_private_key` tinyint(1) NOT NULL DEFAULT '0',
+  `ip_addresses` text,
+  `status` int(2) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `email_addr` varchar(50) DEFAULT NULL,
+  `description` varchar(250) DEFAULT NULL,
+  `date_created` int(11) NOT NULL,
+  `date_modified` int(11) NOT NULL,
+  PRIMARY KEY (`id`,`key`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of keys
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for limits
+-- ----------------------------
+DROP TABLE IF EXISTS `limits`;
+CREATE TABLE `limits` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `uri` varchar(255) NOT NULL,
+  `count` int(10) NOT NULL,
+  `hour_started` int(11) NOT NULL,
+  `api_key` varchar(40) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of limits
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for logs
+-- ----------------------------
+DROP TABLE IF EXISTS `logs`;
+CREATE TABLE `logs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `uri` varchar(255) NOT NULL,
+  `method` varchar(6) NOT NULL,
+  `params` text,
+  `api_key` varchar(40) NOT NULL,
+  `ip_address` varchar(45) NOT NULL,
+  `time` int(11) NOT NULL,
+  `rtime` float DEFAULT NULL,
+  `authorized` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of logs
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for session_logs
+-- ----------------------------
+DROP TABLE IF EXISTS `session_logs`;
+CREATE TABLE `session_logs` (
+  `session_id` varchar(40) NOT NULL DEFAULT '0',
+  `ip_address` varchar(45) NOT NULL DEFAULT '0',
+  `user_agent` varchar(120) NOT NULL,
+  `last_activity` int(10) unsigned NOT NULL DEFAULT '0',
+  `user_data` text NOT NULL,
+  PRIMARY KEY (`session_id`),
+  KEY `last_activity_idx` (`last_activity`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of session_logs
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for version
+-- ----------------------------
+DROP TABLE IF EXISTS `version`;
+CREATE TABLE `version` (
+  `id` int(50) NOT NULL,
+  `version_major` varchar(5) NOT NULL,
+  `version_minor` varchar(5) NOT NULL,
+  `version_update` varchar(5) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `product` varchar(60) NOT NULL,
+  `revision` varchar(60) DEFAULT NULL,
+  `build` varchar(40) DEFAULT NULL,
+  `schema_major` varchar(5) NOT NULL,
+  `schema_minor` varchar(5) NOT NULL,
+  `schema_update` varchar(5) NOT NULL,
+  `start_of_product` date NOT NULL,
+  `end_of_product` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of version
+-- ----------------------------
+INSERT INTO `version` VALUES ('1', '1', '0', '0', 'Quarry', 'REST', null, 'API', '1', '0', '0', '2014-05-12', '0000-00-00');
