@@ -16,7 +16,7 @@ created: 1359560059
     <div class="large-6 columns">
     <br><br>
       <div class="">
-        <iframe width="450px" height="250px" src="img/quarry.gif" frameborder="0" ></iframe>
+        <iframe width="450px" height="260px" src="img/quarry.gif" frameborder="0" ></iframe>
       </div>
     </div>
   </div> 
