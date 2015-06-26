@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Get Started</title>
-    <meta name="description" content="Check out Developer.dol.gov for more information about DOL Apis.
-">
+    <meta name="description" content="Check out Developer.dol.gov for more information about DOL Apis.">
     
 
     <link rel="canonical" href="http://usdepartmentoflabor.github.io/beginners-guide">
