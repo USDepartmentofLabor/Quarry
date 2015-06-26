@@ -105,7 +105,7 @@
     <ul class="small-block-grid-3 text-center">
   
 	<li>
-	<p class="text-center"><img alt="Run Quarry" src="/{{ site.baseurl }}img/Computer.png" />
+	<p class="text-center"><img alt="Run Quarry" src="{{ site.baseurl }}/img/Computer.png" />
         <h4 class="text-center"><strong>Make sure you have what you need to run Quarry</strong></h4></p>
 		<a href="/" class="button ">Requirements</a>
 	</li>
