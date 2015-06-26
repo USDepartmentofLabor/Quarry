@@ -114,7 +114,11 @@ created: 1359560059
 	  <h5><strong>To run Quarry you’ll need:</strong></h5>
        <p>A Debian based Linux distribution that has at least 5 GB of memory, two 2 gigabyte processors, and 20 gigabytes of free space.</p>
         <p>Access to a MySQL or Microsoft SQL server</p>
-        <p>Ability to download the REMI and EPEL repositories (include links if you can right now)</p>
+        <p>Ability to download the <a href="
+http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-repositories-on-centos-and-red-hat
+">REMI</a> and <a href=" 
+http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-repositories-on-centos-and-red-hat
+">EPEL</a>  repositories (include links if you can right now)</p>
   
 		
 		
