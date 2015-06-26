@@ -27,7 +27,7 @@ created: 1359560059
 <ul class="tabs" data-tab role="tablist">
   <li class="tab-title active" role="presentational"><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Overview</a></li>
   <li class="tab-title tab-title-feature" role="presentational"><a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" controls="panel2-2">Features</a></li>
-  <li name="requirements" class="tab-title tab-title-requirement" role="presentational"><a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Requirements</a></li>
+  <li class="tab-title tab-title-requirement" role="presentational"><a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Requirements</a></li>
   <li class="tab-title tab-title-documentation" role="presentational"><a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" controls="panel2-4">Documentation</a></li>
 </ul>
 </div>
@@ -105,28 +105,29 @@ created: 1359560059
   </section>
 <!-- Requirements -->  
 
-  <section role="tabpanel" aria-hidden="true" class="content panel requirement radius" id="panel2-3">
+  <section role="tabpanel" aria-hidden="true" class="content panel requirement radius" id="panel2-3" name="panel2-3">
 	<div class="row">
 	  <div class="large-6 columns"><h3> Basic Configuration</h3></div>
-	  <div class="large-6 columns"><h3> Advanced Configuration </h3></div>
 	</div> 
 	<div class="row">
 	  <div class="large-6 columns">
-	    <h6>Linux</h6>
-	    <h6>RHEL</h6>
-	    <h6>CentOS</h6>
-	    <h6>Ubuntu</h6>
-	    <h6>Debian or later with access to REMI and EPEL repositories</h6>
-	    <h6>MySQL or MSSQL</h6>
+	  <h5><strong>To run Quarry you’ll need:</strong></h5>
+       <p>A Debian based Linux distribution that has at least 5 GB of memory, two 2 gigabyte processors, and 20 gigabytes of free space.</p>
+        <p>Access to a MySQL or Microsoft SQL server</p>
+        <p>Ability to download the REMI and EPEL repositories (include links if you can right now)</p>
+  
+		
+		
 	   <a href="https://github.com/USDepartmentofLabor/Quarry" class="button"><strong>Download Quarry</strong></a>	    
 	  </div>
-	  <div class="large-6 columns"></div>
+
 	</div> 	
  </section>
 <!-- Documentation -->  
   
   <section role="tabpanel" aria-hidden="true" class="content panel documentation radius" id="panel2-4">
 		<div id="wrap_manual">
+			<!-- HIDE FOR NOW
 			<ul>
 				<li><a href="#Quarry_API_User_Manual">Quarry API User Manual</a></li>
 				<li><a href="#Overview">Overview</a></li>
@@ -150,7 +151,9 @@ created: 1359560059
 				<li><a href="#Typical_Configuration_Sequence_of_Quarry_API_Data_Service">Typical Configuration Sequence of Quarry API Data Service</a></li>
 				<li><a href="#Add_Data_Service">Add Data Service</a></li>
 			</ul>
+			-->
 			<h1 id="Quarry_API_User_Manual">Quarry API User Manual</h1>
+			<br>
 			<h2 id="Overview">Overview</h2>
 			<p>This document is an operational overview of the administrative interface for Quarry API.  Details will be provided on how to manage and publish datasets.</p>
 			<h3 id="Product_Features">Product Features</h3>
