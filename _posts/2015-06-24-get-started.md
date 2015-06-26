@@ -110,13 +110,13 @@
 		<a href="/" class="button ">Requirements</a>
 	</li>
 	<li>
-	<p class="text-center"><img alt="Run Quarry" src="/{{ site.baseurl }}img/Download.png"  />
+	<p class="text-center"><img alt="Run Quarry" src="{{ site.baseurl }}img/Download.png"  />
         <h4 class="text-center"><strong>Everything check out?<br> Great.</strong></h4></p>
 				<a href="https://github.com/USDepartmentofLabor/Quarry" class="button ">Download</a>
 
 	</li>
 	<li>
-	<p class="text-center"><img alt="Run Quarry" src="/{{ site.baseurl }}img/Install.png"  />
+	<p class="text-center"><img alt="Run Quarry" src="{{ site.baseurl }}img/Install.png"  />
         <h4 class="text-center"><strong>Finally, you can now <br> begin</strong></h4></p>
 				<a href="#" class="button ">Install</a>
 
