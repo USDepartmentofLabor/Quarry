@@ -67,8 +67,7 @@
             <div class="large-6 columns"><a href="http://developer.dol.gov/"> <span class="brand"></span>
 
                 <h1 class="header-logo-type">
-				QUARRY<br/>
-           UNITED STATES DEPARTMENT OF LABOR</h1>
+				QUARRY<br/> UNITED STATES DEPARTMENT OF LABOR</h1>
             </a></div>
             <div class="large-2 columns">
                 <div class="social-block right hide-for-small"><a href="http://www.facebook.com/departmentoflabor"
@@ -93,24 +92,7 @@
                         <div class="small-2 columns"><input name="commit" type="submit" value="Search"/>
                         </div>
                     </form></-->
-                    <form action="//search.usa.gov/search" method="get" class="usagov" role="search">
-                        <div class="small-10 columns">
-                            <label for="query"><span class="hide">Search</span></label>
-                            <input autocomplete="off" type="text" id="query" name="query"
-                                   placeholder="Enter Search Terms" class="usagov-search-autocomplete"
-                                   required="required">
-                        </div>
-                        <div class="small-2 columns">
-                            <input id="affiliate" name="affiliate" type="hidden" value="developer.dol.gov"/>
-
-                            <input type="image" src="{{ site.baseurl }}/img/icon-search.png" alt="Search"
-                                   class="usagov-submit">
-                            <!--
-                            <input type="image"  src="{{ site.baseurl }}/img/beta_ribbon.png"  vspace="4"  alt="Search DOL" class="usagov-submit">
-                            -->
-                        </div>
-                    </form>
-                </div>
+               </div>
             </div>
         </div>
     </div>
