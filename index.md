@@ -27,7 +27,7 @@ created: 1359560059
 <ul class="tabs" data-tab role="tablist">
   <li class="tab-title active" role="presentational"><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Overview</a></li>
   <li class="tab-title tab-title-feature" role="presentational"><a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" controls="panel2-2">Features</a></li>
-  <li class="tab-title tab-title-requirement" role="presentational"><a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Requirements</a></li>
+  <li name="requirements" class="tab-title tab-title-requirement" role="presentational"><a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Requirements</a></li>
   <li class="tab-title tab-title-documentation" role="presentational"><a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" controls="panel2-4">Documentation</a></li>
 </ul>
 </div>

@@ -86,7 +86,7 @@
 	<li>
 	<p class="text-center"><img alt="Run Quarry" src="{{ site.baseurl }}/img/Computer.png" />
         <h4 class="text-center"><strong>Make sure you have what you need to run Quarry</strong></h4></p>
-		<a href="{{ site.baseurl }}" class="button ">Requirements</a>
+		<a href="{{ site.baseurl }}/#requirements" class="button ">Requirements</a>
 	</li>
 	<li>
 	<p class="text-center"><img alt="Run Quarry" src="{{ site.baseurl }}/img/Download.png"  />
@@ -97,7 +97,7 @@
 	<li>
 	<p class="text-center"><img alt="Run Quarry" src="{{ site.baseurl }}/img/Install.png"  />
         <h4 class="text-center"><strong>Finally, you can now <br> begin</strong></h4></p>
-				<a href="https://github.com/USDepartmentofLabor/Quarry" class="button ">Install</a>
+				<a href="https://github.com/USDepartmentofLabor/Quarry/blob/master/README.md" class="button ">Install</a>
 
 	</li>
 	</ul>
