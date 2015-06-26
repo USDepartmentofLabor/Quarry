@@ -152,15 +152,19 @@ hr { border-top: 3px solid #3d3d3d;}
 
 .panel.callout{
     background-color: #E9F3E6;
+	border:none;
 }
 .panel.feature{
     background-color: #E4F2FD; 
+	border:none;
 }
 .panel.requirement{
     background-color: #FFF2E1; 
+	border:none;	
 }
 .panel.documentation{
-    background-color: #EEEEEE; 
+    background-color: #EEEEEE;
+	border:none;	
 }
 .panel h2{
 	font-size: 160%;
@@ -172,6 +176,9 @@ hr { border-top: 3px solid #3d3d3d;}
 }
 .tabs-content{
 	border-top:solid black 5px;	
+	border-bottom: none;
+	border-left: none;
+	border-right: none;	
 }
 .tabs li.active a, .tabs .tab-title.active a {
     background-color: #E9F3E6;
