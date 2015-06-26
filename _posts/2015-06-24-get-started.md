@@ -62,15 +62,21 @@
         <!--Start Banner -->
         <a id="top"></a>
 
-        <div class="row top-header" role="banner">
-            <div class="large-1 columns"><a href="http://developer.dol.gov/"> <span class="brand"></span>
+  <div class="row top-header" role="banner">
+            <div class="large-1 columns text-right">
+			<a href="http://developer.dol.gov/">
+			<span class="brand"></span></a>
+			</div>
+            <div class="large-11 columns text-left">
+               <h1 class="header-logo-type text-left">
+			   QUARRY<br/>
+                    UNITED STATES DEPARTMENT OF LABOR</h1>
 
-                <h1 class="header-logo-type">
-				QUARRY<br/> UNITED STATES DEPARTMENT OF LABOR</h1>
-            </a></div>
-        </div>
+			</div>
+		</div>
     </div>
 </header>
+
 
 
    <div class="row">
