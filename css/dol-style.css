@@ -101,6 +101,15 @@ h1.header-logo-type {
 	width: 70px;
 	margin: 0 5px 0 0;
 }
+.brand-white {
+	background: url('../img/DOL_logo.svg') no-repeat;
+	cursor: pointer;
+	float: left;
+	height: 70px;
+	text-indent: -9999em;
+	width: 70px;
+	margin: 0 5px 0 10px;
+}
 /* section's header  */
 .hp h1 {
  margin-top: 1.2rem;
