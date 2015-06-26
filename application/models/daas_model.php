@@ -1,5 +1,12 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
+/**
+ * REST DB model
+ *
+ * @author  	johnsonpatrickk (Patrick Johnson Jr.)
+ * @license		http://developer.dol.gov
+ */
+
 class Daas_model extends CI_Model {
 	
 	private $db = NULL;

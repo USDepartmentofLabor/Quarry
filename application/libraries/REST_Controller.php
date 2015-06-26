@@ -9,6 +9,7 @@
  * @subpackage    	Libraries
  * @category    	Libraries
  * @author        	Phil Sturgeon, Chris Kacerguis
+ * @since			johnsonpatrickk (Patrick Johnson Jr.)
  * @license         MIT
  * @link			https://github.com/chriskacerguis/codeigniter-restserver
  * @version         3.0.0-pre
@@ -657,7 +658,9 @@ abstract class REST_Controller extends CI_Controller
 
         // Work out the name of the SERVER entry based on config
         $key_name = 'HTTP_'.strtoupper(str_replace('-', '_', $api_key_variable));
-        // get API key from header authentication and remove dashes from APIv1 users' key 
+        /* format this function if you have
+         * an existing key/token from a previous REST system
+         */
         $api_key_rplcd = strtolower(str_replace('-', '', $this->input->server($key_name)));
         
         $this->rest->key = null;

@@ -1,5 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+/**
+ * REST default landing page controller
+ *
+ * @author  	johnsonpatrickk (Patrick Johnson Jr.)
+ * @license		http://developer.dol.gov
+ */
+
 class Apiv2 extends CI_Controller {
 
 	function __construct()

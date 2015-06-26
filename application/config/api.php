@@ -1,4 +1,14 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+/**
+ * API config
+ *
+ * Set pre-defined tables for model class.
+ *
+ * @author  	johnsonpatrickk (Patrick Johnson Jr.)
+ * @license		http://developer.dol.gov
+ */
+
 /*
  |--------------------------------------------------------------------------
 | Table names

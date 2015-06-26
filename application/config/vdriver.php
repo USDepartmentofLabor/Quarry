@@ -1,7 +1,17 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
+/**
+ * virtual driver config
+ *
+ * virtual DB client configuration for model class.
+ * initiates DB client connection
+ *
+ * @author  	johnsonpatrickk (Patrick Johnson Jr.)
+ * @license		http://developer.dol.gov
+ */
+
 /*
- |--------------------------------------------------------------------------
+|--------------------------------------------------------------------------
 | Virtual schema connection strings
 |--------------------------------------------------------------------------
 |
