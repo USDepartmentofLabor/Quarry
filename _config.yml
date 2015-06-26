@@ -3,7 +3,7 @@ title: U.S. Department of Labor .Net SDK
 email: neyman.neil.e@dol.gov
 description: > # this means to ignore newlines until "baseurl:"
   Check out Developer.dol.gov for more information about DOL Apis.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/Quarry/" # the subpath of your site, e.g. /blog/
 url: "http://usdepartmentoflabor.github.io" # the base hostname & protocol for your site
 
 
