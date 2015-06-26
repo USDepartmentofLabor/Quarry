@@ -16,18 +16,21 @@ latest stable release please visit the [CodeIgniter Downloads](http://www.codeig
   * Import the SQL file to your database
 
 * Edit the following configuration files:
+
   **application/config/config.php**
     * Base Site URL (Example: https://quarry.domain.tld/ or /https://www.domain.tld/quarry/)
     * Encryption Key: Generate key at: [Codeigniter Encryption Key Generator] (http://jeffreybarke.net/tools/codeigniter-encryption-key-generator/)
   
   **application/config/constants.php**
-    * **REST service limit (modify)**
+    
+    REST service limit (modify)
     * `define('DAAS_GET_LIMIT', '200');`
     * `define('DAAS_READ_LIMIT', '500');`
     * `define('LOGS_READ_LIMIT', '1000');`
   
   **application/config/database.php**
-    * Enter database information
+
+    Enter database information
     * `$db['default']['hostname'] = '';`
     * `$db['default']['username'] = '';`
     * `$db['default']['password'] = '';`
