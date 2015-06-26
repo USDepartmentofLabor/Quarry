@@ -63,36 +63,11 @@
         <a id="top"></a>
 
         <div class="row top-header" role="banner">
-            <div class="large-6 columns"><a href="http://developer.dol.gov/"> <span class="brand"></span>
+            <div class="large-1 columns"><a href="http://developer.dol.gov/"> <span class="brand"></span>
 
                 <h1 class="header-logo-type">
 				QUARRY<br/> UNITED STATES DEPARTMENT OF LABOR</h1>
             </a></div>
-            <div class="large-2 columns">
-                <div class="social-block right hide-for-small"><a href="http://www.facebook.com/departmentoflabor"
-                                                                  class="sm-facebook">Facebook</a>
-                    <a href="http://twitter.com/usdol" class="sm-twitter">Twitter</a>
-                    <a href="http://www.instagram.com/USDOL" class="sm-instagram">DOL Instagram</a>
-                    <a href="http://www.dol.gov/rss/" class="sm-rss">RSS</a>
-                    <a href="javascript:window.open('https://public.govdelivery.com/accounts/USDOL/subscriber/new','Popup','width=800,height=500,toolbar=no,scrollbars=yes,resizable=yes'); void('');"
-                       ONCLICK="window.status='Subscribe'; return true"
-                       ONMOUSEOVER="window.status='Subscribe'; return true"
-                       ONMOUSEOUT="window.status=''; return true" class="sm-email">Email</a></div>
-            </div>
-            <div class="large-4 columns">
-                <div id="searchbox">
-                    <!--<form accept-charset="UTF-8" action="http://search.usa.gov/search" id="search_form" method="get">
-                        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"/></div>
-                        <div class="small-10 columns">
-                            <input id="affiliate" name="affiliate" type="hidden" value="developer.dol.gov"/>
-                            <label for="query">Enter Search Term(s):</label>
-                            <input autocomplete="off" class="usagov-search-autocomplete" id="query" name="query" type="text"/>
-                        </div>
-                        <div class="small-2 columns"><input name="commit" type="submit" value="Search"/>
-                        </div>
-                    </form></-->
-               </div>
-            </div>
         </div>
     </div>
 </header>
