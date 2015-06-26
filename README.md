@@ -33,8 +33,8 @@ latest stable release please visit the [CodeIgniter Downloads](http://www.codeig
     * `$db['default']['database'] = 'quarry_restdb';`
 
 # Acknowledgement
-* The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+* DOL Office of Public Affairs would like to thank EllisLab, the CodeIgniter Team at [British Columbia Institute of Technology](http://www.bcit.ca/) and all the
+contributors to the CodeIgniter project.
 * (Phil Sturgeon) https://github.com/philsturgeon
 * (Chris Kacerguis) https://github.com/chriskacerguis
 
