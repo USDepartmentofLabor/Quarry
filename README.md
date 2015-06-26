@@ -1,10 +1,11 @@
 # Quarry REST Service
 
 # Release Information
-* **Requirements**
-* PHP version 5.4 or newer is recommended (LAMP/LAPP Stack).
-* MySQL 5.5 or PostgreSQL 9.3 is recommended
-* CodeIgniter 2.2.0 or newer is recommended. This repo contains in-development code for future releases. To download the
+
+  **Requirements**
+  * PHP version 5.4 or newer is recommended (LAMP/LAPP Stack).
+  * MySQL 5.5 or PostgreSQL 9.3 is recommended
+  * CodeIgniter 2.2.0 or newer is recommended. This repo contains in-development code for future releases. To download the
 latest stable release please visit the [CodeIgniter Downloads](http://www.codeigniter.com/download) page.
 
 # Installation
@@ -15,7 +16,7 @@ latest stable release please visit the [CodeIgniter Downloads](http://www.codeig
   * Import the SQL file to your database
 
 * Edit the following configuration files:
-*  **application/config/config.php**
+  **application/config/config.php**
     * Base Site URL (Example: https://quarry.domain.tld/ or /https://www.domain.tld/quarry/)
     * Encryption Key: Generate key at: [Codeigniter Encryption Key Generator] (http://jeffreybarke.net/tools/codeigniter-encryption-key-generator/)
   
