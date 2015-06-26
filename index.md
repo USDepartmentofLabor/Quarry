@@ -15,14 +15,14 @@ created: 1359560059
     </div>
     <div class="large-6 columns">
     <br><br>
-      <div class="">
+      <div>
         <iframe width="470px" height="270px" src="img/quarry.gif" frameborder="0" ></iframe>
       </div>
     </div>
   </div> 
   <!-- Tab Panel -->
 
-<div class="row">
+<div>
 <div class="small-9 large-centered columns">
 <ul class="tabs" data-tab role="tablist">
   <li class="tab-title active" role="presentational"><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Overview</a></li>
