@@ -153,11 +153,10 @@
                 </ul>
             </div>
             <div class="large-3 columns end line-b-peach">
-                <p><strong>DEVELOPER</strong></p>
+                <p><strong>QUARRY</strong></p>
                 <ul role="navigation">
                     <li><a href="https://opendata.stackexchange.com/questions/ask?tags=labor">Ask Questions</a></li>
                     <li><a href="https://github.com/USDepartmentofLabor/Quarry/issues/new">Report Bugs</a></li>
-                    <li><a href="http://developer.dol.gov/terms-of-service/">Terms of Service</a></li>
                     <li><a href="https://github.com/USDepartmentofLabor/Quarry/tree/gh-pages">Fork this site on Github</a></li>
                 </ul>
             </div>
