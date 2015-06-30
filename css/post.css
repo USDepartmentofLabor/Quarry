@@ -7,7 +7,7 @@
     margin-top: 20px;
 }
 
-.menu_title_dataset {
+.menu_title {
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -62,6 +62,7 @@
     text-decoration: none;
 }
 
+/*
 .post_content_dataset h3,
 .post_content_dataset h3 a,
 .post_content_dataset h3 a:hover {
@@ -73,11 +74,14 @@
     text-decoration: none;
 
 }
+*/
 
+/*
 .post_content_dataset tr th:nth-of-type(3),
 .post_content_dataset tr td:nth-of-type(2) {
     white-space: nowrap !important;
 }
+*/
 
 .post_content_dataset tr:nth-child(even) {
     background-color: #F3F3F3;
@@ -85,6 +89,25 @@
 
 .post_content_dataset thead tr {
     background-color: #D9D9D9;
+}
+
+table caption {
+    text-align: left;
+    font-size: 1.3333em;
+    margin: .5rem 0;
+    font-weight: normal;
+}
+
+th, td {
+    vertical-align: top;
+}
+
+table, th, td {
+    border: 1px solid #3d3d3d;
+}
+
+table {
+    border-collapse: collapse;
 }
 
 .accordion .accordion-navigation > a, .accordion dd > a  {
@@ -216,4 +239,15 @@ hr { border-top: 3px solid #3d3d3d;}
 }
 .tab-title-documentation a:hover {
  text-decoration:none;
+}
+.header-title{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.post_content_dataset p{
+	line-height: 1.4em;
+}
+.wrapper{
+	position:relative;
 }

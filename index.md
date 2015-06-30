@@ -20,7 +20,7 @@ created: 1359560059
       </div>
     </div>
   </div> 
-  <div class = "row">
+  <div class = "">
   <ul class="accordion hide-for-medium-up" data-accordion="" role="tablist">
   <li class="accordion-navigation">
     <a aria-expanded="true" href="#panel1d" role="tab" id="panel1d-heading" aria-controls="panel1d">Overview</a>
