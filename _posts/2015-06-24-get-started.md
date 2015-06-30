@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Get Started</title>
+    <title>Get Started with Quarry - United States Department of Labor Portal</title>
     <meta name="description" content="Check out Developer.dol.gov for more information about DOL Apis.">
     
 
@@ -35,8 +35,6 @@
 
         var usasearch_config = { siteHandle:"developer.dol.gov" };
 
-
-
         var script = document.createElement("script");
 
         script.type = "text/javascript";
@@ -45,65 +43,74 @@
 
         document.getElementsByTagName("head")[0].appendChild(script);
 
-
-
         //]]>
 
     </script>
 
+	<style>
+	h2 {
+		font-weight: bold;
+		font-size: 1.333em;
+		padding: .5em;
+	}		
+	img-icon{
+		margin: .75em 0;
+	}
+	
+</style>
 </head>
-
 
   <body>
 
 <header class="site-header">
     <div class="wrapper">
-        <div class="hide"><a href="#maincontent">Skip to Main Content</a></div>
         <!--Start Banner -->
         <a id="top"></a>
 
-        <div class="row top-header" role="banner">
-            <div class="large-2 columns text-right">
-			</div>
-			<a href="http://usdepartmentoflabor.github.io/Quarry/"> <span class="brand-white"></span></a>
-            <div class="large-10 columns text-left">
-               <h1 class="header-logo-type text-left">
-			   QUARRY<br/>
-                    UNITED STATES DEPARTMENT OF LABOR</h1>
-			</div>
-            <div class="large-10 columns text-right">
-			<a href="https://github.com/USDepartmentofLabor/Quarry"><img style="position: absolute; top: -80px; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+        <div class="row top-header" role="banner" style="position:relative;">
+		
+            			
+            <div class="large-12 columns">
+  			<a href="http://usdepartmentoflabor.github.io/Quarry/"> <span class="brand-white hide-for-small left"></span>
 
+				<h1 class="header-logo-type text-left">
+			   <span class="header-title">QUARRY</span> <br>UNITED STATES DEPARTMENT OF LABOR
+			   </h1>
+			</a>
+			</div>
+            <div>
+			<a href="https://github.com/USDepartmentofLabor/Quarry"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" class = "hide-for-small"></a>
 		</div>
 		</div>
     </div>
 </header>
 
-
    <div class="row">
     <header class="post-header">
         <h1 class="post_title_dataset">Get Started</h1>
     </header>
-    <ul class="small-block-grid-3 text-center">
-  
-	<li>
-	<p class="text-center"><img alt="Run Quarry" src="{{ site.baseurl }}/img/Computer.png" />
-        <h4 class="text-center"><strong>Make sure you have what you need to run Quarry</strong></h4></p>
-		<a href="{{ site.baseurl }}" class="button ">Requirements</a>
-	</li>
-	<li>
-	<p class="text-center"><img alt="Run Quarry" src="{{ site.baseurl }}/img/Download.png"  />
-        <h4 class="text-center"><strong>Everything check out?<br> Great.</strong></h4></p>
-				<a href="https://github.com/USDepartmentofLabor/Quarry" class="button ">Download</a>
 
-	</li>
-	<li>
-	<p class="text-center"><img alt="Run Quarry" src="{{ site.baseurl }}/img/Install.png"  />
-        <h4 class="text-center"><strong>Finally, you can now <br> begin</strong></h4></p>
-				<a href="https://github.com/USDepartmentofLabor/Quarry/blob/master/README.md" class="button ">Install</a>
+	
+	<div class="row">
+        <div class="large-4 columns text-center">
+       	  <img alt="Requirements for Quarry" class="img-icon" src="{{ site.baseurl }}/img/Computer.png" />
+          <h4><strong>Make sure you have what you need to run Quarry</strong></h4>
+          <a href="https://github.com/USDepartmentofLabor/Quarry/blob/master/README.md" class="button ">Requirements</a>
+        </div>
+        
+        <div class="large-4 columns text-center">
+          <img alt="Download Quarry" class="img-icon" src="{{ site.baseurl }}/img/Download.png"  />
+          <h4><strong>Everything check out? <br>Great.</strong></h4>
+          <a href="https://github.com/USDepartmentofLabor/Quarry" class="button ">Download</a>
+        </div>
+        
+        <div class="large-4 columns text-center">
+			<img alt="Run Quarry" class="img-icon" src="{{ site.baseurl }}/img/Install.png"  />
+          <h4><strong>Finally, you can now <br> begin</strong></h4>
+          <a href="https://github.com/USDepartmentofLabor/Quarry/blob/master/README.md" class="button ">Install</a>
+      
+        </div>
 
-	</li>
-	</ul>
     </div>
 
     <footer class="site-footer">
