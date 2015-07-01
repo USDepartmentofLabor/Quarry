@@ -1,12 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-/**
- * REST DB model
- *
- * @author  	johnsonpatrickk (Patrick Johnson Jr.)
- * @license		http://developer.dol.gov
- */
-
 class Daas_model extends CI_Model {
 	
 	private $db = NULL;
@@ -144,23 +137,6 @@ class Daas_model extends CI_Model {
 				
 		$this->apidb->limit($max_data);
 		
-		if (!empty($limit))
-		{
-			// check limit request if greater than 200 rows
-			if ($limit > $max_data)
-			{
-				//echo "i am here, limit over max"."<br>";
-				$this->apidb->limit($max_data, $offset);
-				$this->apidb->order_by($sort_by, $sort_order);			
-			}			
-			else
-			{
-				//echo "i am here"."<br>";
-				$this->apidb->order_by($sort_by, $sort_order);
-				// enforce return data limit control...
-				(empty($limit) == $this->apidb->limit($max_data, $offset)) ? $this->apidb->limit($max_data, $offset) : $this->apidb->limit($limit, $offset);
-			}
-		}
 		if (!empty($date_column)) // checks the datasource date column format 
 		{
 			// request for date range search
@@ -181,7 +157,7 @@ class Daas_model extends CI_Model {
 				$this->apidb->where("$date_column <=", $end_date);
 				//$this->apidb->order_by($date_column, $sort_order);
 				// enforce return data limit control...
-				(empty($limit) == $this->apidb->limit($max_data, $offset)) ? $this->apidb->limit($max_data, $offset) : $this->apidb->limit($limit, $offset);
+				(empty($limit) == $this->apidb->limit($max_data, $offset)) ? $this->apidb->limit($max_data, $offset) : $this->apidb->limit($limit, $offset);			
 			}
 		}
 		if (!empty($columns))
@@ -190,10 +166,21 @@ class Daas_model extends CI_Model {
 			$this->apidb->select($columns);
 			$this->apidb->order_by($sort_by, $sort_order);
 			// enforce return data limit control...
-			(empty($limit) == $this->apidb->limit($max_data, $offset)) ? $this->apidb->limit($max_data, $offset) : $this->apidb->limit($limit, $offset);
+			(empty($limit) == $this->apidb->limit($max_data, $offset)) ? $this->apidb->limit($max_data, $offset) : $this->apidb->limit($limit, $offset);		
+		}
+		// check limit request if greater than 200 rows
+		if ($limit > $max_data)
+		{
+			$this->apidb->order_by($sort_by, $sort_order);
+			$this->apidb->limit($max_data, $offset);
+			$query = $this->apidb->get();
+		}
+		else
+		{
+			$query = $this->apidb->get();
 		}
 		
-		$query = $this->apidb->get();
+		//print $this->apidb->last_query(); exit;
 		if (!$query)
 		{
 		     return FALSE;
@@ -220,7 +207,7 @@ class Daas_model extends CI_Model {
 	{
 		$this->db->select($this->_config->table["connection_strings"] . ".*, tbl2.*");
 		$this->db->join("api_rdbms AS tbl2", $this->_config->table["connection_strings"] . ".daas_rdbms = tbl2.db_id");
-		$this->db->where($this->_config->table["connection_strings"] . ".daas_method", $filter['metadata']);
+		$this->db->where($this->_config->table["connection_strings"] . ".daas_table_alias", $filter['source']);
 	
 		$query = $this->db->get($this->connect_strng_tbl);
 
@@ -281,9 +268,9 @@ class Daas_model extends CI_Model {
 		$this->apidb->from($query->row("daas_table"));
 
 		// request for dataset description
-		if (!empty($filter['metadata']))
+		if (!empty($filter['source']))
 		{
-			$fields = $this->apidb->field_data($filter['metadata']);
+			$fields = $this->apidb->field_data($query->row("daas_table"));
 			
 			foreach ($fields as $row)
 			{

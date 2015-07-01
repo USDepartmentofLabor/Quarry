@@ -1,23 +1,16 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-/**
- * Logs model
- *
- * @author  	johnsonpatrickk (Patrick Johnson Jr.)
- * @license		http://developer.dol.gov
- */
-
 class Log_model extends CI_Model
 {
 
-	private $dbmssql = NULL;
 	private $db = NULL;
 	
 	function __construct() {
 		parent::__construct();
 		
-		// bootstrap apiv2 default database
+		// bootstrap apiv2 mssql database
 		$this->db = $this->load->database('default', TRUE);
+		//$this->dbmssql = $this->load->database('mssql', TRUE);
 	}
 	
 	public function get_logs() {

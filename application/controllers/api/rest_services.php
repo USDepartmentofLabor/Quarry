@@ -1,10 +1,9 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
- * REST API controller
+ * APIv2 REST Services Controller
  *
- * @author  	johnsonpatrickk (Patrick Johnson Jr.)
- * @license		http://developer.dol.gov
+ * @package	REST Services Controller
  */
 
 // REST parent class include
@@ -44,7 +43,14 @@ class Rest_services extends REST_Controller {
     			'start_date' => $this->get('start_date'),
     			'end_date' => $this->get('end_date')
     	);
- 	
+		/*     	
+    	// check if date is unixtime stamp, then convert to 18F standard
+    	$is_unix_time = $this->is_unix_timestamp($string = $filter['start_date']);
+    	if ($is_unix_time) // convert unix timestamp to 18F
+    	{
+    		date('Y-m-d H:i:s', $filter['start_date']);
+    	}
+    	*/ 	
     	if (!empty($filter['start_date']) && !empty($filter['end_date']))
 	    {
 	    	$this->date_validate($start_date = $this->get('start_date'), $end_date = $this->get('end_date'));
