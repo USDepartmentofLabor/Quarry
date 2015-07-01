@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Quarry - United States Department OF LABOR"
+title: "Quarry - United States Department of Labor"
 created: 1359560059
 ---
 <!-- Banner/Splash -->
