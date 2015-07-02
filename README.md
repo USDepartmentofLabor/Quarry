@@ -1,4 +1,13 @@
-# Quarry REST Service
+# Quarry REST Service patch release for v1.0.1
+This is a security patch update for Quarry REST. If you wish to use the administrative interface, you will need to download the latest version of [Quarry AdminUI](https://github.com/USDepartmentofLabor/Quarry-Admin/)   
+
+#Change log v1.0.1 - 2015.07.02
+
+**Changes**
+* Improved API call functionality 
+
+**Security**
+* Improved separation of concerns in the MVC framework making API calls are more secure.
 
 # Release Information
 
