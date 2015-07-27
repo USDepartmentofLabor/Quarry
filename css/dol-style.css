@@ -93,7 +93,7 @@ h1.header-logo-type {
 	text-decoration:underline !important;
 }
 .brand {
-	background: url('../img/logo.png') no-repeat;
+	background: url('img/logo.png') no-repeat;
 	cursor: pointer;
 	float: left;
 	height: 70px;
@@ -465,7 +465,10 @@ h1.header-logo-type {
  font-size: 14px!important;
  line-height:16px!important;
  margin-top: 10px!important;
+ 	margin-left: 20px !important;
+ 
 }
+
  .brand {
  background: url("../img/logo-s.png") no-repeat;
  cursor: pointer;
@@ -523,6 +526,7 @@ h1.header-logo-type {
     font-size: 18px!important;
     line-height: 20px!important;
     margin-top: 4px!important;
+ 	margin-left: 20px !important;
 }
  .brand {
  background: url("../img/logo-s.png") no-repeat);

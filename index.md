@@ -4,10 +4,9 @@ title: "Quarry - United States Department of Labor"
 created: 1359560059
 ---
 <!-- Banner/Splash -->
-<div class="row">
-    <div class="large-6 columns"> 
-    	<br><br><br>
-      <h2>Turn your databases into a single API with Quarry.</h2>
+<div class="row ">
+    <div class="large-6 columns "> 
+      <h2 class="highlights">Turn your databases into a single API with Quarry.</h2>
       <br>
       <div class="text-center">
       <a href="./get-started" class="button success "><strong>GET STARTED</strong></a>
@@ -20,7 +19,7 @@ created: 1359560059
       </div>
     </div>
   </div> 
-  <div class = "row">
+  <div class = "">
   <ul class="accordion hide-for-medium-up" data-accordion="" role="tablist">
   <li class="accordion-navigation">
     <a aria-expanded="true" href="#panel1d" role="tab" id="panel1d-heading" aria-controls="panel1d">Overview</a>
@@ -68,6 +67,7 @@ created: 1359560059
   <li class="accordion-navigation ">
     <a aria-expanded="false" href="#panel3d" role="tab" id="panel3d-heading" aria-controls="panel3d">Requirements</a>
     <div id="panel3d" class="content " role="tabpanel" aria-labelledby="panel3d-heading">
+	  <h2 id = "requirements">Basic Configuration</h2>
 	  <p><strong>To run Quarry you’ll need:</strong></p>
        <p>A Debian based Linux distribution that has at least 5 GB of memory, two 2 gigabyte processors, and 20 gigabytes of free space.</p>
         <p>Access to a MySQL or Microsoft SQL server.</p>
@@ -200,9 +200,10 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 			<h2 id="User_Management">User Management</h2>
 			<h3 id="User_Lifecycle_Flow">User Lifecycle Flow</h3>
 			<p>All Quarry API users will need to register. Below is the Quarry API registration screen.</p>
+			<h4>API Registration</h4>
 			<img src="img/quarry_manual/register.png" alt="Quarry API registration form that asks for first name, last name, e-mail address, and password" />
 			<h4>Get Approved by an Administrator</h4>
-			<p>An administrator will see your registration in the Pending Request page and will begin the approval process.</p>
+			<p>An administrator will see your registration in the <strong>Pending Request</strong> page and will begin the approval process.</p>
 			<h5>Pending User Account Request List</h5>
 			<img src="img/quarry_manual/pending_request.jpg" alt="List of pending user accounts requested" />
 			<h5>Approve Pending User Account Request</h5>
@@ -537,7 +538,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</div>
 			</div>			
 			<img src="img/quarry_manual/list-of-user-roles.jpg" alt="List of user roles, which a person can view, update, or delete" />
-			<p>You can create roles in the Account Manager menu. A role must be assigned at least one permission during its creation.  The table below describes the required role parameters.</p>
+			<p>You can create roles in the <strong>Account Manager</strong> menu. A role must be assigned at least one permission during its creation.  The table below describes the required role parameters.</p>
 			<div class="dsktp_tbl">
 				<table summary="List of User Roles, which a person can view, update, or delete">
 					<caption>List of User Roles</caption>
@@ -902,14 +903,14 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 			<p>Figure 6.1 shows how to connect to an Oracle data source to Quarry. Please use table 6.1 as a guide to which fields are necessary.</p>			
 			<img src="img/quarry_manual/add-data-string.jpg" alt="Database connection string page, which asks for database type, IP address, use name, password, and a few more fields" />			
 		</div>
-  </section>    </div>
+  </section>    
+  </div>
   </li>
 </ul>
   
   <!-- Tab Panel -->
-<div>
-<div class="small-9 large-centered columns show-for-medium-up">
-<ul id = "tab-menu" class="tabs" data-tab role="tablist">
+<div class ="small-9 large-centered columns show-for-medium-up" >
+<ul id = "tab-menu" class="tabs" data-tab role="tablist" >
   <li class="tab-title active" role="presentational"><a href="#panel2-1" role="tab" tabindex="-1" aria-selected="true" controls="panel2-1">Overview</a></li>
   <li class="tab-title tab-title-feature" role="presentational"><a href="#panel2-2" role="tab" tabindex="-1" aria-selected="false" controls="panel2-2">Features</a></li>
   <li class="tab-title tab-title-requirement" role="presentational" id="#panel2-3" name="#panel2-3"><a href="#panel2-3" role="tab" tabindex="-1" aria-selected="false" controls="panel2-3">Requirements</a></li>
@@ -987,7 +988,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 
   <section role="tabpanel" aria-hidden="true" class="content panel requirement radius" data-options="deep_linking:true; scroll_to_content: true" id="panel2-3" name="panel2-3">
 	<div class="row">
-	  <div class="large-6 columns"><h3 id = "requirements">Basic Configuration</h3></div>
+	  <div class="large-6 columns"><h2 id = "requirements">Basic Configuration</h2></div>
 	</div> 
 	<div class="row">
 	  <div class="large-6 columns">
@@ -1125,9 +1126,10 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 			<h2 id="User_Management">User Management</h2>
 			<h3 id="User_Lifecycle_Flow">User Lifecycle Flow</h3>
 			<p>All Quarry API users will need to register. Below is the Quarry API registration screen.</p>
+			<h4>API Registration</h4>
 			<img src="img/quarry_manual/register.png" alt="Quarry API registration form that asks for first name, last name, e-mail address, and password" />
 			<h4>Get Approved by an Administrator</h4>
-			<p>An administrator will see your registration in the Pending Request page and will begin the approval process.</p>
+			<p>An administrator will see your registration in the  <strong>Pending Request</strong> page and will begin the approval process.</p>
 			<h5>Pending User Account Request List</h5>
 			<img src="img/quarry_manual/pending_request.jpg" alt="List of pending user accounts requested" />
 			<h5>Approve Pending User Account Request</h5>
@@ -1462,7 +1464,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</div>
 			</div>			
 			<img src="img/quarry_manual/list-of-user-roles.jpg" alt="List of user roles, which a person can view, update, or delete" />
-			<p>You can create roles in the Account Manager menu. A role must be assigned at least one permission during its creation.  The table below describes the required role parameters.</p>
+			<p>You can create roles in the <strong>Account Manager</strong> menu. A role must be assigned at least one permission during its creation.  The table below describes the required role parameters.</p>
 			<div class="dsktp_tbl">
 				<table summary="List of User Roles, which a person can view, update, or delete">
 					<caption>List of User Roles</caption>
@@ -1829,5 +1831,4 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 		</div>
   </section>
   </div>
-</div>
 </div>

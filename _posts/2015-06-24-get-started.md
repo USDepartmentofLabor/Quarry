@@ -1,52 +1,34 @@
 <html>
 
-  <head>
+ <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Get Started with Quarry - United States Department of Labor Portal</title>
-    <meta name="description" content="Check out Developer.dol.gov for more information about DOL Apis.">
-    
+    <title>{% if post.title %}{{ post.title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+    {% if page.url == "/404.html" %}
+    <meta http-equiv="refresh" content="5; url=/">
+    {% endif %}
 
-    <link rel="canonical" href="http://usdepartmentoflabor.github.io/beginners-guide">
-    
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/foundation.css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/dol-style.css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/content.css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/post.css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/foundation.css" />
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300' rel='stylesheet' type='text/css'>
-    <script id="_fed_an_ua_tag" src="/js/federated-analytics-developer.js?agency=DOL&amp;subagency=DEVELOPER"></script>
-    <script src="/js/modernizr.js"></script>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!-- css -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/foundation.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/dol-style.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/content.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/post.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/mobile.css" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300' rel='stylesheet' type='text/css'>
+    <script id="_fed_an_ua_tag" src="{{ site.baseurl }}/js/federated-analytics-developer.js?agency=DOL&amp;subagency=DEVELOPER"></script>
+    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
     <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
     <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
     <![endif]-->
-
-
-    <script type="text/javascript">
-
-        //<![CDATA[
-
-        var usasearch_config = { siteHandle:"developer.dol.gov" };
-
-        var script = document.createElement("script");
-
-        script.type = "text/javascript";
-
-        script.src = "//search.usa.gov/javascripts/remote.loader.js";
-
-        document.getElementsByTagName("head")[0].appendChild(script);
-
-        //]]>
-
-    </script>
-
 	<style>
 	h2 {
 		font-weight: bold;
@@ -63,17 +45,15 @@
   <body>
 
 <header class="site-header">
-    <div class="wrapper">
+    <div class="row wrapper">
         <!--Start Banner -->
         <a id="top"></a>
 
-        <div class="row top-header" role="banner" style="position:relative;">
-		
-            			
-            <div class="large-12 columns">
+        <div class="large-12 columns top-header" role="banner" style="position:relative;">
+		            			
   			<a href="http://usdepartmentoflabor.github.io/Quarry/"> <span class="brand-white hide-for-small left"></span>
 
-				<h1 class="header-logo-type text-left">
+				<h1 class="header-logo-type">
 			   <span class="header-title">QUARRY</span> <br>UNITED STATES DEPARTMENT OF LABOR
 			   </h1>
 			</a>
@@ -83,43 +63,38 @@
 		</div>
 		</div>
     </div>
-</header>
-
-   <div class="row">
-    <header class="post-header">
-        <h1 class="post_title_dataset">Get Started</h1>
-    </header>
-
-	
+</header>	
 	<div class="row">
+	        <h1 class="post_title_dataset">Get Started</h1>
+
         <div class="large-4 columns text-center">
        	  <img alt="Requirements for Quarry" class="img-icon" src="{{ site.baseurl }}/img/Computer.png" />
-          <h4><strong>Make sure you have what you need to run Quarry</strong></h4>
-          <a href="https://github.com/USDepartmentofLabor/Quarry/blob/master/README.md" class="button ">Requirements</a>
+          <h2><strong>Make sure you have what you need to run Quarry</strong></h2>
+          <a href="https://github.com/USDepartmentofLabor/Quarry/blob/master/README.md" class="button "><strong>Requirements</strong></a>
         </div>
         
         <div class="large-4 columns text-center">
           <img alt="Download Quarry" class="img-icon" src="{{ site.baseurl }}/img/Download.png"  />
-          <h4><strong>Everything check out? <br>Great.</strong></h4>
-          <a href="https://github.com/USDepartmentofLabor/Quarry" class="button ">Download</a>
+          <h2><strong>Everything check out? <br>Great.</strong></h2>
+          <a href="https://github.com/USDepartmentofLabor/Quarry" class="button "><strong>Download</strong></a>
         </div>
         
         <div class="large-4 columns text-center">
 			<img alt="Run Quarry" class="img-icon" src="{{ site.baseurl }}/img/Install.png"  />
-          <h4><strong>Finally, you can now <br> begin</strong></h4>
-          <a href="https://github.com/USDepartmentofLabor/Quarry/blob/master/README.md" class="button ">Install</a>
+          <h2><strong>Finally, you can now <br> begin</strong></h2>
+          <a href="https://github.com/USDepartmentofLabor/Quarry/blob/master/README.md" class="button "><strong>Install</strong></a>
       
         </div>
 
     </div>
 
-    <footer class="site-footer">
+   <footer class=" site-footer">
 
     <!-- Start Footer One -->
     <div role="contentinfo">
         <div class="row footer-one">
-            <div class="large-5 columns hide-for-small"> <a href="http://dol.gov"> <img src="{{ site.baseurl }}/img/dol-logo-white.png" alt="U.S.Department of Labor"/> <span class="header-logo-type-white">UNITED STATES <br>
-    DEPARTMENT OF LABOR </span> </a> </div>
+            <div class="large-5 columns hide-for-small"> <a href="http://dol.gov"> <img src="{{ site.baseurl }}/img/dol-logo-white.png" alt="U.S.Department of Labor"/> <span class="header-logo-type-white">UNITED STATES <br>DEPARTMENT OF LABOR </span> </a> 
+			</div>
             <div class="large-3 columns">
                 <p class="footer-info1 a-bottom"><a href="http://www.dol.gov/dol/contact/">Contact Us </a></p>
             </div>
@@ -141,7 +116,7 @@
         <!-- End Footer One -->
 
         <!-- Start Footer Two -->
-       <div class="row footer-two">
+        <div class="row footer-two">
             <div class="large-3 columns line-b-peach">
                 <p>200 Constitution Ave. NW<br>
                     Washington DC 20210<br>
@@ -170,24 +145,22 @@
                     <li><a href="https://github.com/USDepartmentofLabor/Quarry/tree/gh-pages">Fork this site on Github</a></li>
                 </ul>
             </div>
+
         </div>
         <!-- End Footer Two -->
     </div>
 
 </footer>
-<script src="/js/vendor/jquery.js"></script>
-<script src="/js/vendor/fastclick.js"></script>
-<script src="/js/foundation.min.js"></script>
+<script src="{{ site.baseurl }}/js/vendor/jquery.js"></script>
+<script src="{{ site.baseurl }}/js/vendor/fastclick.js"></script>
+<script src="{{ site.baseurl }}/js/foundation.min.js"></script>
 
 <script>
     $(document).foundation();
 </script>
 <!-- Never remove this: Resolved IE 8 issue on grids of the CSS Frameworks-->
-<script src="/js/rem.min.js" type="text/javascript"></script>
+<script src="{{ site.baseurl }}/js/rem.min.js" type="text/javascript"></script>
 <!-- Never remove above line -->
-
-
-
   </body>
 
 </html>
