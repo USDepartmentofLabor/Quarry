@@ -14,12 +14,12 @@ All of the code in this repository is public domain software.
 
 The list below outline the predominant open source technologies used:
 
-CodeIgniter 2.2.0
-Twitter Bootstrap version 3
-jQuery 1.10
-PHP 5.3 for Framework
-MySQL 5.5
-Ruby Jekyll
+* CodeIgniter 2.2.0
+* Twitter Bootstrap version 3
+* jQuery 1.10
+* PHP 5.3 for Framework
+* MySQL 5.5
+* Ruby Jekyll
 
 Contact Information
 -----------
