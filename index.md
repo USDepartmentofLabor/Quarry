@@ -15,7 +15,7 @@ created: 1359560059
     <div class="large-6 columns">
     <br><br>
       <div>
-        <iframe width="470px" height="270px" src="img/quarry.gif" frameborder="0" class = "hide-for-small"></iframe>
+        <iframe width="470" height="270" src="img/quarry.gif" frameborder="0" class = "hide-for-small"></iframe>
       </div>
     </div>
   </div> 
@@ -110,9 +110,15 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				<li><a href="#Add_Data_Service">Add Data Service</a></li>
 			</ul>
 			-->
-			<h1 id="Quarry_API_User_Manual">Quarry API User Manual</h1>
+			<h1 id="Quarry_API_User_Manual">Quarry API Documentation</h1>
+			<ul>
+				<li><a href="#Quarry_API_User_Manual_mbl">Administrative User Interface (AdminUI) User Manual</a></li>
+				<li><a href="#rest_mbl">Rest User Manual</a></li>
+			</ul>
+
+			<h2 id="Quarry_API_User_Manual_mbl" tabindex="-1">Quarry API User Manual</h2>
 			<br>
-			<h2 id="Overview">Overview</h2>
+			<h3 id="Overview">Overview</h3>
 			<p>This document is an operational overview of the administrative interface for Quarry API.  Details will be provided on how to manage and publish datasets.</p>
 			<h3 id = "Product_Information">Product Information</h3>
 			<p>Quarry API is a convenient way to access DOL data and is designed using RESTful technology along with the user-friendly web 2.0 accessible layout. Therefore, the burden of data configuration, user management and RESTful API calls can be done with a less technically skilled staff.</p>
@@ -129,7 +135,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				<li>Add, edit, and delete Quarry API keys</li>
 				<li>Add, edit, delete, and test data sources for DOL dataset retrieval</li>
 			</ul>
-			<h2 id="User_Types">User Types</h2>
+			<h3 id="User_Types">User Types</h3>
 			<div class="dsktp_tbl">
 				<table summary="Quarry API User Roles, which contains user type, definition, and technical proficiency fields">
 					<caption>Quarry API User Roles</caption>
@@ -165,7 +171,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h3 id="Quarry_API_User_Roles">Quarry API User Roles</h3>
+				<h4 id="Quarry_API_User_Roles">Quarry API User Roles</h4>
 				<div class="odd_row">
 					<p class="mbl-strng">User Type: Super Administrators (<b>Highest category</b>)</p>
 					<p><span class="mbl-strng">Definition</span> Performs user and API management</p>
@@ -187,39 +193,39 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 					<p><span class="mbl-strng">Technical Proficiency:</span> LOW</p>
 				</div>
 			</div>
-			<h2 id="User_Type_Hierarchical_Details">User Type Hierarchical Details</h2>
+			<h3 id="User_Type_Hierarchical_Details">User Type Hierarchical Details</h3>
 			<p>This section describes how Quarry user types are defined and their contribution to the overall API data lifecycle.</p>			
-			<h3 id="Super_Administrators">Super Administrators</h3>			
+			<h4 id="Super_Administrators">Super Administrators</h4>			
 			<p>Administrators are the highest type of users in Quarry. They have access to all rights and features in the system. Their primary roles are to manage users, generate API keys for users, assign roles to all new users, and monitor the overall system health.</p>
-			<h3 id="Application_Managers">Application Managers</h3>
+			<h4 id="Application_Managers">Application Managers</h4>
 			<p>Users who only need to create datasets will be given this role. The application manager manages the data source&rsquo;s external system and will have the configuration details to create a connection for remote access to the necessary data. The application manager will need a valid API key to test a connection, along with test and examine the dataset prior to giving developers public access.</p>
-			<h3 id="Developers">Developers</h3>
+			<h4 id="Developers">Developers</h4>
 			<p>Developers can be users who maintain Quarry API&rsquo;s codebase or are responsible for creating end user applications. Developers generally will use Quarry API to populate their applications.</p>
-			<h3 id="Consumers">Consumers</h3>
+			<h4 id="Consumers">Consumers</h4>
 			<p>End users will be able to consume Quarry API data via handheld, tablet and desktop.</p>
-			<h2 id="User_Management">User Management</h2>
-			<h3 id="User_Lifecycle_Flow">User Lifecycle Flow</h3>
+			<h3 id="User_Management">User Management</h3>
+			<h4 id="User_Lifecycle_Flow">User Lifecycle Flow</h4>
 			<p>All Quarry API users will need to register. Below is the Quarry API registration screen.</p>
-			<h4>API Registration</h4>
+			<h5>API Registration</h5>
 			<img src="img/quarry_manual/register.png" alt="Quarry API registration form that asks for first name, last name, e-mail address, and password" />
-			<h4>Get Approved by an Administrator</h4>
+			<h5>Get Approved by an Administrator</h5>
 			<p>An administrator will see your registration in the <strong>Pending Request</strong> page and will begin the approval process.</p>
-			<h5>Pending User Account Request List</h5>
+			<h6>Pending User Account Request List</h6>
 			<img src="img/quarry_manual/pending_request.jpg" alt="List of pending user accounts requested" />
-			<h5>Approve Pending User Account Request</h5>
+			<h6>Approve Pending User Account Request</h6>
 			<p>The pending page allows administrators to select your role and modify other information in your profile. This user has been given <b>Super Admin</b> rights.</p>
 			<img src="img/quarry_manual/approve_user.jpg" alt="Pending user account page were profile is updated with permissions or any other necessary information" />
-			<h5>User Account Approval Message</h5>
+			<h6>User Account Approval Message</h6>
 			<img src="img/quarry_manual/user_approved.jpg" alt="User account approval message, which shows user name, status, date account was created, and e-mail address" />			
-			<h5>Login Screen</h5>
+			<h6>Login Screen</h6>
 			<p class="error_note"><b>Note</b>: Request Access feature has not been implemented as of v.1.0.0</p>			
 			<img src="img/quarry_manual/login.jpg" alt="Quarry - Admin UI Login in Page, which asks for user name and password" />			
-			<h5>User Password Reset</h5>
+			<h6>User Password Reset</h6>
 			<img src="img/quarry_manual/forgot_password.jpg" alt="User password reset, which is looking for persons e-mail address" />
-			<h2 id="User_Policies">User Policies</h2>
-			<h3 id="Permissions">Permissions</h3>
+			<h3 id="User_Policies">User Policies</h3>
+			<h4 id="Permissions">Permissions</h4>
 			<p>AdminUI is a permission-based interface which represents user driven features. All actions and operations are assigned to a permission in the source code. However, a permission must be created in the interface prior to the action being programmed in the source code. The Access Control List (ACL) governs permission&rsquo;s management in the AdminUI system. You can assign permissions to roles in the <b>Role Manager</b> page.</p>
-			<h4>Access Control List (ACL)</h4>			
+			<h5>Access Control List (ACL)</h5>			
 			<div class="dsktp_tbl">
 				<table summary="Quarry Access Control List (ACL), which contains API permissions and description fields">
 					<caption>Quarry Access Control List (ACL)</caption>
@@ -346,7 +352,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>			
 			<div class="mbl_tbl">
-				<h5>Quarry Access Control List (ACL)</h5>
+				<h6>Quarry Access Control List (ACL)</h6>
 				<div class="odd_row">
 					<p class="mbl-strng">Quarry API Permissions: Access ACL</p>
 					<p><span class="mbl-strng">Feature/Operation:</span> Allows access to view, and change settings in the ACL</p>
@@ -460,7 +466,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 					<p><span class="mbl-strng">Feature/Operation:</span> View user account list</p>
 				</div>
 			</div>			
-			<h4>Adding Permissions</h4>
+			<h5>Adding Permissions</h5>
 			<p>Adding permissions is a straightforward process. Please make sure you <b>do not</b> create duplicate system IDs or system names.</p>
 			<div class="dsktp_tbl">
 				<table summary="Quarry Permissions, which about property and definition fields">
@@ -488,7 +494,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h5>Quarry Permissions</h5>
+				<h6>Quarry Permissions</h6>
 				<div class="odd_row">
 					<p><span class="mbl-strng">Property:</span> System Name</p>
 					<p><span class="mbl-strng">Definition:</span> Human readable name for a permission</p>
@@ -503,7 +509,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</div>
 			</div>
 			<img src="img/quarry_manual/list-of-permissions.jpg" alt="Create additional permissions page, which you need to add system name, system ID, and description information" />
-			<h3 id="Roles">Roles</h3>
+			<h4 id="Roles">Roles</h4>
 			<p>All users must be assigned a role, which is a set of permissions that grants users access to AdminUI features.</p>
 			<div class="dsktp_tbl">
 				<table summary="Quarry Roles, which are the suer type and their permissions">
@@ -527,7 +533,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h4>Quarry Roles</h4>
+				<h5>Quarry Roles</h5>
 				<div class="odd_row">
 					<p><span class="mbl-strng">User Type:</span> Super Administrators</p>
 					<p><span class="mbl-strng">Rights:</span> All permissions</p>
@@ -569,7 +575,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h4>List of User Roles</h4>
+				<h5>List of User Roles</h5>
 				<div class="odd_row">
 					<p><span class="mbl-strng">Property:</span> System Name</p>
 					<p><span class="mbl-strng">Definition:</span> Human readable name</p>
@@ -587,11 +593,11 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 					<p><span class="mbl-strng">Definition:</span> You can assign permissions in the UI</p>
 				</div>
 			</div>
-			<h4>Creating Roles</h4>
+			<h5>Creating Roles</h5>
 			<p>Permissions will vary based on the user role, which you cannot have duplicate system IDs or system names.</p>
 			<img src="img/quarry_manual/add-user-roles.jpg" alt="Add role page, which lets you create name, system ID, 500 character description, and chose permissions" />
-			<h2 id="Quarry_API_Key_Management">Quarry API Key Management</h2>
-			<h3 id="Creating_Quarry_API_Keys">Creating Quarry API Keys</h3>
+			<h3 id="Quarry_API_Key_Management">Quarry API Key Management</h3>
+			<h4 id="Creating_Quarry_API_Keys">Creating Quarry API Keys</h4>
 			<p>Administrators can create new API keys by using the <b>Register New Key</b> tab found under the <b>API Key Manager</b> menu. Quarry API will accept APIv1 keys as well. A user can own multiple Quarry API keys. New API keys are emailed to the user.</p>
 			<div class="dsktp_tbl">
 				<table summary="Quarry API Key Information, which uses API key name, e-mail address, and description">
@@ -619,7 +625,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h4>Quarry API Key Information</h4>
+				<h5>Quarry API Key Information</h5>
 				<div class="odd_row">
 					<p><span class="mbl-strng">API Key Property:</span> API key name</p>
 					<p><span class="mbl-strng">Definition:</span> API label given by the user or organization</p>
@@ -634,13 +640,13 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</div>
 			</div>			
 			<img src="img/quarry_manual/register-key.jpg" alt="Register new API key page, which allows you to name the API key, assign an e-mail address to the key, and write a short description" />
-			<h3 id="Quarry_API_Keys">Quarry API Keys</h3>
+			<h4 id="Quarry_API_Keys">Quarry API Keys</h4>
 			<p>The <b>API Key Manager</b> contains a list of API keys. In addition to deleting keys, administrators can block/unblock user keys should the need arises, along with additional features available on this page.</p>
 			<img src="img/quarry_manual/list-of-api-keys.jpg" alt="List of API keys page, which allows administrators to view, updated, delete, or block and unblock an individual API key" />
-			<h2 id="Dataset_Service_Managemen">Dataset Service Management</h2>
+			<h3 id="Dataset_Service_Managemen">Dataset Service Management</h3>
 			<p>The <b>Manage Datasets</b> menu allows administrators to configure datasets for the Quarry API REST engine. The definitions in table 6.1 are the main components for the dataset management service.  The connection string parameters are supplied by the data source owner.</p>
 			<p>Be mindful that Quarry API v1.0.0 currently supports four database types. </p>
-			<h3 id="Supported_Database_Types">Supported Database Types:</h3>
+			<h4 id="Supported_Database_Types">Supported Database Types:</h4>
 			<ul>
 				<li>MySQL</li>
 				<li>Microsoft SQL</li>
@@ -681,7 +687,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h4>Quarry Database Query Information</h4>
+				<h5>Quarry Database Query Information</h5>
 				<div class="odd_row">
 					<p><span class="mbl-strng">Quarry Data service:</span> Connection string</p>
 					<p><span class="mbl-strng">Definition:</span> Connection strings are input parameters that allow Quarry to connect to a remote data source</p>
@@ -703,7 +709,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 					<p><span class="mbl-strng">Definition:</span> Quarry provides round trip user input translation services from HTTP to SQL <br> as outlined in list 6.1 Using advance technology lessens the technical learning curve while enhancing the user experience</p>
 				</div>
 			</div>			
-			<h3 id="Typical_Configuration_Sequence_of_Quarry_API_Data_Service">Typical Configuration Sequence of Quarry API Data Service</h3>
+			<h4 id="Typical_Configuration_Sequence_of_Quarry_API_Data_Service">Typical Configuration Sequence of Quarry API Data Service</h4>
 			<ol>
 				<li>The application manager will contact the data source owner for the connection string information.</li>
 				<li>The application manager will request that the data source owner provides an obfuscated  list of available table names.</li>
@@ -711,7 +717,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				<li>Test the new connection string   for datasets using Quarry&rsquo;s AdminUI. You can see the datasets information in either JSON or XML format, dependent on your choice.</li>
 				<li>If you   are able to successfully connect to a data source, but cannot retrieve data, contact the data source owner and check if the remote configuration is working or whether the database has data.</li>
 			</ol>
-			<h3 id="Add_Data_Service">Add Data Service</h3>
+			<h4 id="Add_Data_Service">Add Data Service</h4>
 			<p>Obtain connection string parameters from the data source owner.  Use table 6.2 as a reference. If the owner does not have the database type listed, Quarry API cannot offer service. Please note which fields in this table are required, optional or not applicable depending on the database type (MySQL, Microsoft SQL, Oracle and PostgreSQL).</p>
 			<div class="dsktp_tbl">
 				<table summary="Quarry Database Fields, which include FQDN/IP Address, user name, password, database name, schema, table name, and a few more">
@@ -814,7 +820,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h4>Quarry Database Fields</h4>
+				<h5>Quarry Database Fields</h5>
 				<div class="odd_row">
 					<p class="mbl-strng">Database Parameters: FQDN/IP Address</p>
 					<p><span class="mbl-strng">MySQL:</span> Required</p>
@@ -903,6 +909,287 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 			<p>Figure 6.1 shows how to connect to an Oracle data source to Quarry. Please use table 6.1 as a guide to which fields are necessary.</p>			
 			<img src="img/quarry_manual/add-data-string.jpg" alt="Database connection string page, which asks for database type, IP address, use name, password, and a few more fields" />			
 		</div>
+<h2 id="rest_mbl" tabindex="-1">Rest User Manual</h2>
+<h3>Use Your Quarry API Key (<span class="msg1">Required</span>)</h3>
+<p class="msg1">IF YOU HAVE AN APIv1 KEY, PLEASE SKIP THIS SECTION</p>
+<p class="force_wrap">Register at <a href="https://devtools.dol.gov/developer/Account/Register">https://devtools.dol.gov/developer/Account/Register</a> to get a QUARRY API key. The new API key will be e-mailed to you.</p>
+<h3>cURL Generic Quarry Usage (<span class="msg1">Strict Order</span>)</h3>
+<p class="force_wrap">curl -k -H  "X-API-KEY: YOUR_API_KEY" –X GET https://data.dol.gov/get/ALIAS/filtername1/filtervalue1/filtername2/filtervalue2</p>
+<div class="dsktp_tbl">
+	<table summary="cURL syntax, which contains parameter name and description">
+		<caption>cURL Syntax</caption>
+		<thead>
+			<tr>
+				<th scope="col">Name</th>
+				<th scope="col">Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Rest_servername</td>
+				<td><strong>https://data.dol.gov/get/</strong></td>
+			</tr>
+			<tr>
+				<td>YOUR_API_KEY</td>
+				<td>Your QUARRY API key</td>
+			</tr>
+			<tr>
+				<td>ALIAS</td>
+				<td>You must provide a valid alias data table name</td>
+			</tr>
+			<tr>
+				<td>filtername</td>
+				<td>Filtername is part of a key/value pair</td>
+			</tr>
+			<tr>
+				<td>filtervalue</td>
+				<td>The value of the filter key/pair can either be set as a fixed parameter or as a number </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="mbl_tbl">
+	<h3>cURL Syntax</h3>
+	<div class="odd_row">
+		<p class="mbl-strng">Name: Rest_servername</p>
+		<p><span class="mbl-strng">Description:</span> <strong>https://data.dol.gov/get/</strong></p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Name: YOUR_API_KEY</p>
+		<p><span class="mbl-strng">Description:</span> Your QUARRY API key</p>
+	</div>
+	<div class="odd_row">
+		<p class="mbl-strng">Name: ALIAS</p>
+		<p><span class="mbl-strng">Description:</span> You must provide a valid alias data table name</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Name: filtername</p>
+		<p><span class="mbl-strng">Description:</span> Filtername is part of a key/value pair</p>
+	</div>
+	<div class="odd_row">
+		<p class="mbl-strng">Name: filtervalue</p>
+		<p><span class="mbl-strng">Description:</span> The value of the filter key/pair can either be set as a fixed parameter or as a number </p>
+	</div>
+</div>
+<h3>Filtering Options</h3>
+<h4>Format</h4>
+<p>Dataset will be in JSON or XML with JSON being the default format.</p>
+<h5>Usage</h5>
+<ul>
+	<li>format/json or format/xml</li>
+</ul>
+<h4>Limit</h4>
+<p>Number of rows Quarry will return. While the maximum allowed for Quarry is 200.</p>
+<h5>Usage</h5>
+<ul>
+	<li>limit/your_number = desired rows</li>
+	<li>limit/200 = Quarry API limit</li>
+</ul>
+<h4>Order</h4>
+<p>Ascending or descending sorting order as determined by the targeted datasource.</p>
+<h5>Usage</h5>
+<ul>
+	<li>orderby/asc = data in ascending order sorted by the first field</li>
+	<li>orderby/desc = data in descending order sorted by the first field</li>
+</ul>
+<h4>Columns</h4>
+<p>Columns can be selected individually with the columns keyword. The datasets will be sorted by the first field you list after the columns keyword.</p>
+<div class="dsktp_tbl">
+	<table summary="Columns syntax, which contains syntax and description">
+		<caption>Columns Syntax</caption>
+		<thead>
+			<tr>
+				<th scope="col">Syntax</th>
+				<th scope="col">Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>columns</td>
+				<td>Must be included for column filtering</td>
+			</tr>
+			<tr>
+				<td>{</td>
+				<td>Begin columns option</td>
+			</tr>
+			<tr>
+				<td>:</td>
+				<td>Delimiter separating columns</td>
+			</tr>
+			<tr>
+				<td>}</td>
+				<td>End column selection</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="mbl_tbl">
+	<h3>Columns Syntax</h3>
+	<div class="odd_row">
+		<p class="mbl-strng">Syntax: columns</p>
+		<p><span class="mbl-strng">Description:</span> Must be included for column filtering</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Syntax: {</p>
+		<p><span class="mbl-strng">Description:</span> Begin columns option</p>
+	</div>
+	<div class="odd_row">
+		<p class="mbl-strng">Syntax: :</p>
+		<p><span class="mbl-strng">Description:</span> Delimiter separating columns</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Syntax: }</p>
+		<p><span class="mbl-strng">Description:</span> End column selection</p>
+	</div>
+</div>
+<h5>Usage – Separated by colon(s)</h5>
+<ul>
+	<li class="force_wrap">columns/{first_column:second_column:third_column}</li>
+</ul>
+<h3>Dates - (yyyy-mm-dd)</h3>
+<div class="dsktp_tbl">
+	<table summary="Date syntax, which contains field and description">
+		<caption>Date Syntax</caption>
+		<thead>
+			<tr>
+				<th scope="col">Field</th>
+				<th scope="col">Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>date_column</td>
+				<td>Must be included to search by dates</td>
+			</tr>
+			<tr>
+				<td>start_date</td>
+				<td>Start date will search from the start date until the latest date available</td>
+			</tr>
+			<tr>
+				<td>end_date</td>
+				<td>From the past up until the end date (returned in reversed order from the end date)</td>
+			</tr>
+			<tr>
+				<td>Both</td>
+				<td>Looks for the exact date range asked for from the start_date to the end_date</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="mbl_tbl">
+	<div class="odd_row">
+		<p class="mbl-strng">Field: date_column</p>
+		<p><span class="mbl-strng">Description:</span> Must be included to search by dates</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Field: start_date</p>
+		<p><span class="mbl-strng">Description:</span> Start date will search from the start date until the latest date available</p>
+	</div>
+	<div class="odd_row">
+		<p class="mbl-strng">Field: end_date</p>
+		<p><span class="mbl-strng">Description:</span> From the past up until the end date (returned in reversed order from the end date)</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Field: Both</p>
+		<p><span class="mbl-strng">Description:</span> Looks for the exact date range asked for from the start_date to the end_date</p>
+	</div>
+</div>
+<h3>Multi-Filtering</h3>
+<h4>Examples</h4>
+<h5>Usage One</h5>
+<p class="force_wrap">curl -k -H "X-API-KEY: YOUR_API_KEY" –X GET https://data.dol.gov/get/datasource/format/xml/limit/10/orderby/desc/columns/{column_1: column_2: column_3}</p>
+<h5>Explanation One</h5>
+<p>Select 10 rows of columns 1, 2, and 3 from ‘table_alias’ in descending order of column 1 in XML format.</p>
+<h5>Usage Two</h5>
+<p class="force_wrap">curl -k -H "X-API-KEY: YOUR_API_KEY" https://data.dol.gov/get/datasource /limit/130/orderby/asc/columns/{date_column_1:column_2:column_3}/date_column/date_column_1/ start_date/2005-03-15/end_date/2010-04-15</p>
+<h5>Explanation Two</h5>
+<p>Select 130 rows of columns 1, 2, and 3 from ‘table_alias’ in ascending order of date_column_1 by date range  2005-03-15 to 2010-04-15</p>
+<h3>Please Note</h3>
+<ul>
+	<li>Metadata information on data sources schemas is not included in this release.</li>
+	<li>Supported SQL drivers - Oracle, MSSQL, MySQL and PostgreSQL</li>
+	<li>APIv1 keys are accepted</li>
+</ul>
+
+<h3>REST Response Codes</h3>  
+<div class="dsktp_tbl">
+	<table summary="Quarry REST Response Codes and Descriptions, which contains code, text, and description">
+		<caption>Quarry REST Response Codes and Descriptions</caption>
+		<thead>
+			<tr>
+				<th scope="col">Code</th>
+				<th scope="col">Text</th>
+				<th scope="col">Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>200</td>
+				<td>OK</td>
+				<td>Success!</td>
+			</tr>
+			<tr>
+				<td>201</td>
+				<td>Created/POST</td>
+				<td>The request has been fulfilled and resulted in a new resource being created. The newly created resource can be referenced by the URI(s) returned in the entity of the response, with the most specific URI for the resource given by a Location header field. The response SHOULD include an entity containing a list of resource characteristics and location(s) from which the user or user agent can choose the one most appropriate. The entity format is specified by the media type given in the Content-Type header field. The origin server MUST create the resource before returning the 201 status code. If the action cannot be carried out immediately, the server SHOULD respond with 202 (Accepted) response instead.</td>
+			</tr>
+			<tr>
+				<td>202</td>
+				<td>Accepted</td>
+				<td>The request has been accepted for processing, but the processing has not been completed. The request might or might not eventually be acted upon, as it might be disallowed when processing actually takes place. There is no facility for re-sending a status code from an asynchronous operation such as this.</td>
+			</tr>
+			<tr>
+				<td>400</td>
+				<td>Bad Request</td>
+				<td>The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modifications.</td>
+			</tr>
+			<tr>
+				<td>403</td>
+				<td>Forbidden</td>
+				<td>The server understood the request, but is refusing to fulfill it. Authorization will not help and the request SHOULD NOT be repeated. If the request method was not HEAD and the server wishes to make public why the request has not been fulfilled, it SHOULD describe the reason for the refusal in the entity. If the server does not wish to make this information available to the client, the status code 404 (Not Found) can be used instead.</td>
+			</tr>
+			<tr>
+				<td>406</td>
+				<td>Not Accepted</td>
+				<td>The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="mbl_tbl">
+	<h3>Quarry REST Response Code Description</h3>
+	<div class="odd_row">
+		<p class="mbl-strng">Code: 200</p>
+		<p><span class="mbl-strng">Text:</span> OK</p>
+		<p><span class="mbl-strng">Description:</span> Success!</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Code: 201</p>
+		<p><span class="mbl-strng">Text:</span> Created/POST</p>
+		<p><span class="mbl-strng">Description:</span> The request has been fulfilled and resulted in a new resource being created. The newly created resource can be referenced by the URI(s) returned in the entity of the response, with the most specific URI for the resource given by a Location header field. The response SHOULD include an entity containing a list of resource characteristics and location(s) from which the user or user agent can choose the one most appropriate. The entity format is specified by the media type given in the Content-Type header field. The origin server MUST create the resource before returning the 201 status code. If the action cannot be carried out immediately, the server SHOULD respond with 202 (Accepted) response instead.</p>
+	</div>
+	<div class="odd_row">
+		<p class="mbl-strng">Code: 202</p>
+		<p><span class="mbl-strng">Text:</span> Accepted</p>
+		<p><span class="mbl-strng">Description:</span> The request has been accepted for processing, but the processing has not been completed. The request might or might not eventually be acted upon, as it might be disallowed when processing actually takes place. There is no facility for re-sending a status code from an asynchronous operation such as this.</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Code: 400</p>
+		<p><span class="mbl-strng">Text:</span> Bad Request</p>
+		<p><span class="mbl-strng">Description:</span> The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modifications.</p>
+	</div>
+	<div class="odd_row">
+		<p class="mbl-strng">Code: 403</p>
+		<p><span class="mbl-strng">Text:</span> Forbidden</p>
+		<p><span class="mbl-strng">Description:</span> The server understood the request, but is refusing to fulfill it. Authorization will not help and the request SHOULD NOT be repeated. If the request method was not HEAD and the server wishes to make public why the request has not been fulfilled, it SHOULD describe the reason for the refusal in the entity. If the server does not wish to make this information available to the client, the status code 404 (Not Found) can be used instead.</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Code: 406</p>
+		<p><span class="mbl-strng">Text:</span> Not Accepted</p>
+		<p><span class="mbl-strng">Description:</span> The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.</p>
+	</div>
+</div>
   </section>    
   </div>
   </li>
@@ -1036,13 +1323,19 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				<li><a href="#Add_Data_Service">Add Data Service</a></li>
 			</ul>
 			-->
-			<h1 id="Quarry_API_User_Manual">Quarry API User Manual</h1>
+			<h1 id="Quarry_API_User_Manual">Quarry API Documentation</h1>
+			<ul>
+				<li><a href="#Quarry_API_User_Manual_dsk">Administrative User Interface (AdminUI) User Manual</a></li>
+				<li><a href="#rest">Rest User Manual</a></li>
+			</ul>
+
+			<h2 id="Quarry_API_User_Manual_dsk" tabindex="-1">Quarry API User Manual</h2>
 			<br>
-			<h2 id="Overview">Overview</h2>
+			<h3 id="Overview">Overview</h3>
 			<p>This document is an operational overview of the administrative interface for Quarry API.  Details will be provided on how to manage and publish datasets.</p>
-			<h3 id = "Product_Information">Product Information</h3>
+			<h4 id = "Product_Information">Product Information</h4>
 			<p>Quarry API is a convenient way to access DOL data and is designed using RESTful technology along with the user-friendly web 2.0 accessible layout. Therefore, the burden of data configuration, user management and RESTful API calls can be done with a less technically skilled staff.</p>			
-			<h3 id="Product_Features">Product Features</h3>
+			<h4 id="Product_Features">Product Features</h4>
 			<p>With Quarry API you can:</p>
 			<ul>
 				<li>Use any open web language to access data</li>
@@ -1055,7 +1348,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				<li>Add, edit, and delete Quarry API keys</li>
 				<li>Add, edit, delete, and test data sources for DOL dataset retrieval</li>
 			</ul>
-			<h2 id="User_Types">User Types</h2>
+			<h3 id="User_Types">User Types</h3>
 			<div class="dsktp_tbl">
 				<table summary="Quarry API User Roles, which contains user type, definition, and technical proficiency fields">
 					<caption>Quarry API User Roles</caption>
@@ -1091,7 +1384,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h3 id="Quarry_API_User_Roles">Quarry API User Roles</h3>
+				<h4 id="Quarry_API_User_Roles">Quarry API User Roles</h4>
 				<div class="odd_row">
 					<p class="mbl-strng">User Type: Super Administrators (<b>Highest category</b>)</p>
 					<p><span class="mbl-strng">Definition</span> Performs user and API management</p>
@@ -1113,39 +1406,39 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 					<p><span class="mbl-strng">Technical Proficiency:</span> LOW</p>
 				</div>
 			</div>
-			<h2 id="User_Type_Hierarchical_Details">User Type Hierarchical Details</h2>
+			<h3 id="User_Type_Hierarchical_Details">User Type Hierarchical Details</h3>
 			<p>This section describes how Quarry user types are defined and their contribution to the overall API data lifecycle.</p>			
-			<h3 id="Super_Administrators">Super Administrators</h3>			
+			<h4 id="Super_Administrators">Super Administrators</h4>			
 			<p>Administrators are the highest type of users in Quarry. They have access to all rights and features in the system. Their primary roles are to manage users, generate API keys for users, assign roles to all new users, and monitor the overall system health.</p>
-			<h3 id="Application_Managers">Application Managers</h3>
+			<h4 id="Application_Managers">Application Managers</h4>
 			<p>Users who only need to create datasets will be given this role. The application manager manages the data source&rsquo;s external system and will have the configuration details to create a connection for remote access to the necessary data. The application manager will need a valid API key to test a connection, along with test and examine the dataset prior to giving developers public access.</p>
-			<h3 id="Developers">Developers</h3>
+			<h4 id="Developers">Developers</h4>
 			<p>Developers can be users who maintain Quarry API&rsquo;s codebase or are responsible for creating end user applications. Developers generally will use Quarry API to populate their applications.</p>
-			<h3 id="Consumers">Consumers</h3>
+			<h4 id="Consumers">Consumers</h4>
 			<p>End users will be able to consume Quarry API data via handheld, tablet and desktop.</p>
-			<h2 id="User_Management">User Management</h2>
-			<h3 id="User_Lifecycle_Flow">User Lifecycle Flow</h3>
+			<h3 id="User_Management">User Management</h3>
+			<h4 id="User_Lifecycle_Flow">User Lifecycle Flow</h4>
 			<p>All Quarry API users will need to register. Below is the Quarry API registration screen.</p>
-			<h4>API Registration</h4>
+			<h5>API Registration</h5>
 			<img src="img/quarry_manual/register.png" alt="Quarry API registration form that asks for first name, last name, e-mail address, and password" />
-			<h4>Get Approved by an Administrator</h4>
+			<h5>Get Approved by an Administrator</h5>
 			<p>An administrator will see your registration in the  <strong>Pending Request</strong> page and will begin the approval process.</p>
-			<h5>Pending User Account Request List</h5>
+			<h6>Pending User Account Request List</h6>
 			<img src="img/quarry_manual/pending_request.jpg" alt="List of pending user accounts requested" />
-			<h5>Approve Pending User Account Request</h5>
+			<h6>Approve Pending User Account Request</h6>
 			<p>The pending page allows administrators to select your role and modify other information in your profile. This user has been given <b>Super Admin</b> rights.</p>
 			<img src="img/quarry_manual/approve_user.jpg" alt="Pending user account page were profile is updated with permissions or any other necessary information" />
-			<h5>User Account Approval Message</h5>
+			<h6>User Account Approval Message</h6>
 			<img src="img/quarry_manual/user_approved.jpg" alt="User account approval message, which shows user name, status, date account was created, and e-mail address" />			
-			<h5>Login Screen</h5>
+			<h6>Login Screen</h6>
 			<p class="error_note"><b>Note</b>: Request Access feature has not been implemented as of v.1.0.0</p>			
 			<img src="img/quarry_manual/login.jpg" alt="Quarry - Admin UI Login in Page, which asks for user name and password" />			
-			<h5>User Password Reset</h5>
+			<h6>User Password Reset</h6>
 			<img src="img/quarry_manual/forgot_password.jpg" alt="User password reset, which is looking for persons e-mail address" />
-			<h2 id="User_Policies">User Policies</h2>
-			<h3 id="Permissions">Permissions</h3>
+			<h3 id="User_Policies">User Policies</h3>
+			<h4 id="Permissions">Permissions</h4>
 			<p>AdminUI is a permission-based interface which represents user driven features. All actions and operations are assigned to a permission in the source code. However, a permission must be created in the interface prior to the action being programmed in the source code. The Access Control List (ACL) governs permission&rsquo;s management in the AdminUI system. You can assign permissions to roles in the <b>Role Manager</b> page.</p>
-			<h4>Access Control List (ACL)</h4>			
+			<h5>Access Control List (ACL)</h5>			
 			<div class="dsktp_tbl">
 				<table summary="Quarry Access Control List (ACL), which contains API permissions and description fields">
 					<caption>Quarry Access Control List (ACL)</caption>
@@ -1272,7 +1565,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>			
 			<div class="mbl_tbl">
-				<h5>Quarry Access Control List (ACL)</h5>
+				<h6>Quarry Access Control List (ACL)</h6>
 				<div class="odd_row">
 					<p class="mbl-strng">Quarry API Permissions: Access ACL</p>
 					<p><span class="mbl-strng">Feature/Operation:</span> Allows access to view, and change settings in the ACL</p>
@@ -1386,7 +1679,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 					<p><span class="mbl-strng">Feature/Operation:</span> View user account list</p>
 				</div>
 			</div>			
-			<h4>Adding Permissions</h4>
+			<h5>Adding Permissions</h5>
 			<p>Adding permissions is a straightforward process. Please make sure you <b>do not</b> create duplicate system IDs or system names.</p>
 			<div class="dsktp_tbl">
 				<table summary="Quarry Permissions, which about property and definition fields">
@@ -1414,7 +1707,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h5>Quarry Permissions</h5>
+				<h6>Quarry Permissions</h6>
 				<div class="odd_row">
 					<p><span class="mbl-strng">Property:</span> System Name</p>
 					<p><span class="mbl-strng">Definition:</span> Human readable name for a permission</p>
@@ -1429,7 +1722,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</div>
 			</div>
 			<img src="img/quarry_manual/list-of-permissions.jpg" alt="Create additional permissions page, which you need to add system name, system ID, and description information" />
-			<h3 id="Roles">Roles</h3>
+			<h4 id="Roles">Roles</h4>
 			<p>All users must be assigned a role, which is a set of permissions that grants users access to AdminUI features.</p>
 			<div class="dsktp_tbl">
 				<table summary="Quarry Roles, which are the suer type and their permissions">
@@ -1453,7 +1746,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h4>Quarry Roles</h4>
+				<h5>Quarry Roles</h5>
 				<div class="odd_row">
 					<p><span class="mbl-strng">User Type:</span> Super Administrators</p>
 					<p><span class="mbl-strng">Rights:</span> All permissions</p>
@@ -1495,7 +1788,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h4>List of User Roles</h4>
+				<h5>List of User Roles</h5>
 				<div class="odd_row">
 					<p><span class="mbl-strng">Property:</span> System Name</p>
 					<p><span class="mbl-strng">Definition:</span> Human readable name</p>
@@ -1513,11 +1806,11 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 					<p><span class="mbl-strng">Definition:</span> You can assign permissions in the UI</p>
 				</div>
 			</div>
-			<h4>Creating Roles</h4>
+			<h5>Creating Roles</h5>
 			<p>Permissions will vary based on the user role, which you cannot have duplicate system IDs or system names.</p>
 			<img src="img/quarry_manual/add-user-roles.jpg" alt="Add role page, which lets you create name, system ID, 500 character description, and chose permissions" />
-			<h2 id="Quarry_API_Key_Management">Quarry API Key Management</h2>
-			<h3 id="Creating_Quarry_API_Keys">Creating Quarry API Keys</h3>
+			<h3 id="Quarry_API_Key_Management">Quarry API Key Management</h3>
+			<h4 id="Creating_Quarry_API_Keys">Creating Quarry API Keys</h4>
 			<p>Administrators can create new API keys by using the <b>Register New Key</b> tab found under the <b>API Key Manager</b> menu. Quarry API will accept APIv1 keys as well. A user can own multiple Quarry API keys. New API keys are emailed to the user.</p>
 			<div class="dsktp_tbl">
 				<table summary="Quarry API Key Information, which uses API key name, e-mail address, and description">
@@ -1545,7 +1838,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h4>Quarry API Key Information</h4>
+				<h5>Quarry API Key Information</h5>
 				<div class="odd_row">
 					<p><span class="mbl-strng">API Key Property:</span> API key name</p>
 					<p><span class="mbl-strng">Definition:</span> API label given by the user or organization</p>
@@ -1560,13 +1853,13 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</div>
 			</div>			
 			<img src="img/quarry_manual/register-key.jpg" alt="Register new API key page, which allows you to name the API key, assign an e-mail address to the key, and write a short description" />
-			<h3 id="Quarry_API_Keys">Quarry API Keys</h3>
+			<h4 id="Quarry_API_Keys">Quarry API Keys</h4>
 			<p>The <b>API Key Manager</b> contains a list of API keys. In addition to deleting keys, administrators can block/unblock user keys should the need arises, along with additional features available on this page.</p>
 			<img src="img/quarry_manual/list-of-api-keys.jpg" alt="List of API keys page, which allows administrators to view, updated, delete, or block and unblock an individual API key" />
-			<h2 id="Dataset_Service_Managemen">Dataset Service Management</h2>
+			<h3 id="Dataset_Service_Managemen">Dataset Service Management</h3>
 			<p>The <b>Manage Datasets</b> menu allows administrators to configure datasets for the Quarry API REST engine. The definitions in table 6.1 are the main components for the dataset management service.  The connection string parameters are supplied by the data source owner.</p>
 			<p>Be mindful that Quarry API v1.0.0 currently supports four database types. </p>
-			<h3 id="Supported_Database_Types">Supported Database Types:</h3>
+			<h4 id="Supported_Database_Types">Supported Database Types:</h4>
 			<ul>
 				<li>MySQL</li>
 				<li>Microsoft SQL</li>
@@ -1607,7 +1900,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h4>Quarry Database Query Information</h4>
+				<h5>Quarry Database Query Information</h5>
 				<div class="odd_row">
 					<p><span class="mbl-strng">Quarry Data service:</span> Connection string</p>
 					<p><span class="mbl-strng">Definition:</span> Connection strings are input parameters that allow Quarry to connect to a remote data source</p>
@@ -1629,7 +1922,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 					<p><span class="mbl-strng">Definition:</span> Quarry provides round trip user input translation services from HTTP to SQL <br> as outlined in list 6.1 Using advance technology lessens the technical learning curve while enhancing the user experience</p>
 				</div>
 			</div>			
-			<h3 id="Typical_Configuration_Sequence_of_Quarry_API_Data_Service">Typical Configuration Sequence of Quarry API Data Service</h3>
+			<h4 id="Typical_Configuration_Sequence_of_Quarry_API_Data_Service">Typical Configuration Sequence of Quarry API Data Service</h4>
 			<ol>
 				<li>The application manager will contact the data source owner for the connection string information.</li>
 				<li>The application manager will request that the data source owner provides an obfuscated  list of available table names.</li>
@@ -1637,7 +1930,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				<li>Test the new connection string   for datasets using Quarry&rsquo;s AdminUI. You can see the datasets information in either JSON or XML format, dependent on your choice.</li>
 				<li>If you   are able to successfully connect to a data source, but cannot retrieve data, contact the data source owner and check if the remote configuration is working or whether the database has data.</li>
 			</ol>
-			<h3 id="Add_Data_Service">Add Data Service</h3>
+			<h4 id="Add_Data_Service">Add Data Service</h4>
 			<p>Obtain connection string parameters from the data source owner.  Use table 6.2 as a reference. If the owner does not have the database type listed, Quarry API cannot offer service. Please note which fields in this table are required, optional or not applicable depending on the database type (MySQL, Microsoft SQL, Oracle and PostgreSQL).</p>
 			<div class="dsktp_tbl">
 				<table summary="Quarry Database Fields, which include FQDN/IP Address, user name, password, database name, schema, table name, and a few more">
@@ -1740,7 +2033,7 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 				</table>
 			</div>
 			<div class="mbl_tbl">
-				<h4>Quarry Database Fields</h4>
+				<h5>Quarry Database Fields</h5>
 				<div class="odd_row">
 					<p class="mbl-strng">Database Parameters: FQDN/IP Address</p>
 					<p><span class="mbl-strng">MySQL:</span> Required</p>
@@ -1829,6 +2122,287 @@ http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-re
 			<p>Figure 6.1 shows how to connect to an Oracle data source to Quarry. Please use table 6.1 as a guide to which fields are necessary.</p>			
 			<img src="img/quarry_manual/add-data-string.jpg" alt="Database connection string page, which asks for database type, IP address, use name, password, and a few more fields" />			
 		</div>
+<h2 id="rest" tabindex="-1">Rest User Manual</h2>
+<h3>Use Your Quarry API Key (<span class="msg1">Required</span>)</h3>
+<p class="msg1">IF YOU HAVE AN APIv1 KEY, PLEASE SKIP THIS SECTION</p>
+<p class="force_wrap">Register at <a href="https://devtools.dol.gov/developer/Account/Register">https://devtools.dol.gov/developer/Account/Register</a> to get a QUARRY API key. The new API key will be e-mailed to you.</p>
+<h3>cURL Generic Quarry Usage (<span class="msg1">Strict Order</span>)</h3>
+<p class="force_wrap">curl -k -H  "X-API-KEY: YOUR_API_KEY" –X GET https://data.dol.gov/get/ALIAS/filtername1/filtervalue1/filtername2/filtervalue2</p>
+<div class="dsktp_tbl">
+	<table summary="cURL syntax, which contains parameter name and description">
+		<caption>cURL Syntax</caption>
+		<thead>
+			<tr>
+				<th scope="col">Name</th>
+				<th scope="col">Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Rest_servername</td>
+				<td><strong>https://data.dol.gov/get/</strong></td>
+			</tr>
+			<tr>
+				<td>YOUR_API_KEY</td>
+				<td>Your QUARRY API key</td>
+			</tr>
+			<tr>
+				<td>ALIAS</td>
+				<td>You must provide a valid alias data table name</td>
+			</tr>
+			<tr>
+				<td>filtername</td>
+				<td>Filtername is part of a key/value pair</td>
+			</tr>
+			<tr>
+				<td>filtervalue</td>
+				<td>The value of the filter key/pair can either be set as a fixed parameter or as a number </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="mbl_tbl">
+	<h3>cURL Syntax</h3>
+	<div class="odd_row">
+		<p class="mbl-strng">Name: Rest_servername</p>
+		<p><span class="mbl-strng">Description:</span> <strong>https://data.dol.gov/get/</strong></p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Name: YOUR_API_KEY</p>
+		<p><span class="mbl-strng">Description:</span> Your QUARRY API key</p>
+	</div>
+	<div class="odd_row">
+		<p class="mbl-strng">Name: ALIAS</p>
+		<p><span class="mbl-strng">Description:</span> You must provide a valid alias data table name</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Name: filtername</p>
+		<p><span class="mbl-strng">Description:</span> Filtername is part of a key/value pair</p>
+	</div>
+	<div class="odd_row">
+		<p class="mbl-strng">Name: filtervalue</p>
+		<p><span class="mbl-strng">Description:</span> The value of the filter key/pair can either be set as a fixed parameter or as a number </p>
+	</div>
+</div>
+<h3>Filtering Options</h3>
+<h4>Format</h4>
+<p>Dataset will be in JSON or XML with JSON being the default format.</p>
+<h5>Usage</h5>
+<ul>
+	<li>format/json or format/xml</li>
+</ul>
+<h4>Limit</h4>
+<p>Number of rows Quarry will return. While the maximum allowed for Quarry is 200.</p>
+<h5>Usage</h5>
+<ul>
+	<li>limit/your_number = desired rows</li>
+	<li>limit/200 = Quarry API limit</li>
+</ul>
+<h4>Order</h4>
+<p>Ascending or descending sorting order as determined by the targeted datasource.</p>
+<h5>Usage</h5>
+<ul>
+	<li>orderby/asc = data in ascending order sorted by the first field</li>
+	<li>orderby/desc = data in descending order sorted by the first field</li>
+</ul>
+<h4>Columns</h4>
+<p>Columns can be selected individually with the columns keyword. The datasets will be sorted by the first field you list after the columns keyword.</p>
+<div class="dsktp_tbl">
+	<table summary="Columns syntax, which contains syntax and description">
+		<caption>Columns Syntax</caption>
+		<thead>
+			<tr>
+				<th scope="col">Syntax</th>
+				<th scope="col">Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>columns</td>
+				<td>Must be included for column filtering</td>
+			</tr>
+			<tr>
+				<td><strong>{</strong></td>
+				<td>Begin columns option</td>
+			</tr>
+			<tr>
+				<td><strong>:</strong></td>
+				<td>Delimiter separating columns</td>
+			</tr>
+			<tr>
+				<td><strong>}</strong></td>
+				<td>End column selection</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="mbl_tbl">
+	<h3>Columns Syntax</h3>
+	<div class="odd_row">
+		<p class="mbl-strng">Syntax: columns</p>
+		<p><span class="mbl-strng">Description:</span> Must be included for column filtering</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Syntax: {</p>
+		<p><span class="mbl-strng">Description:</span> Begin columns option</p>
+	</div>
+	<div class="odd_row">
+		<p class="mbl-strng">Syntax: :</p>
+		<p><span class="mbl-strng">Description:</span> Delimiter separating columns</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Syntax: }</p>
+		<p><span class="mbl-strng">Description:</span> End column selection</p>
+	</div>
+</div>
+<h5>Usage – Separated by colon(s)</h5>
+<ul>
+	<li class="force_wrap">columns/{first_column:second_column:third_column}</li>
+</ul>
+<h3>Dates - (yyyy-mm-dd)</h3>
+<div class="dsktp_tbl">
+	<table summary="Date syntax, which contains field and description">
+		<caption>Date Syntax</caption>
+		<thead>
+			<tr>
+				<th scope="col">Field</th>
+				<th scope="col">Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>date_column</td>
+				<td>Must be included to search by dates</td>
+			</tr>
+			<tr>
+				<td>start_date</td>
+				<td>Start date will search from the start date until the latest date available</td>
+			</tr>
+			<tr>
+				<td>end_date</td>
+				<td>From the past up until the end date (returned in reversed order from the end date)</td>
+			</tr>
+			<tr>
+				<td>Both</td>
+				<td>Looks for the exact date range asked for from the start_date to the end_date</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="mbl_tbl">
+	<div class="odd_row">
+		<p class="mbl-strng">Field: date_column</p>
+		<p><span class="mbl-strng">Description:</span> Must be included to search by dates</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Field: start_date</p>
+		<p><span class="mbl-strng">Description:</span> Start date will search from the start date until the latest date available</p>
+	</div>
+	<div class="odd_row">
+		<p class="mbl-strng">Field: end_date</p>
+		<p><span class="mbl-strng">Description:</span> From the past up until the end date (returned in reversed order from the end date)</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Field: Both</p>
+		<p><span class="mbl-strng">Description:</span> Looks for the exact date range asked for from the start_date to the end_date</p>
+	</div>
+</div>
+<h3>Multi-Filtering</h3>
+<h4>Examples</h4>
+<h5>Usage One</h5>
+<p class="force_wrap">curl -k -H "X-API-KEY: YOUR_API_KEY" –X GET https://data.dol.gov/get/datasource/format/xml/limit/10/orderby/desc/columns/{column_1: column_2: column_3}</p>
+<h5>Explanation One</h5>
+<p>Select 10 rows of columns 1, 2, and 3 from ‘table_alias’ in descending order of column 1 in XML format.</p>
+<h5>Usage Two</h5>
+<p class="force_wrap">curl -k -H "X-API-KEY: YOUR_API_KEY" https://data.dol.gov/get/datasource /limit/130/orderby/asc/columns/{date_column_1:column_2:column_3}/date_column/date_column_1/ start_date/2005-03-15/end_date/2010-04-15</p>
+<h5>Explanation Two</h5>
+<p>Select 130 rows of columns 1, 2, and 3 from ‘table_alias’ in ascending order of date_column_1 by date range  2005-03-15 to 2010-04-15</p>
+<h3>Please Note</h3>
+<ul>
+	<li>Metadata information on data sources schemas is not included in this release.</li>
+	<li>Supported SQL drivers - Oracle, MSSQL, MySQL and PostgreSQL</li>
+	<li>APIv1 keys are accepted</li>
+</ul>
+
+<h3>REST Response Codes</h3>  
+<div class="dsktp_tbl">
+	<table summary="Quarry REST Response Codes and Descriptions, which contains code, text, and description">
+		<caption>Quarry REST Response Codes and Descriptions</caption>
+		<thead>
+			<tr>
+				<th scope="col">Code</th>
+				<th scope="col">Text</th>
+				<th scope="col">Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>200</td>
+				<td>OK</td>
+				<td>Success!</td>
+			</tr>
+			<tr>
+				<td>201</td>
+				<td>Created/POST</td>
+				<td>The request has been fulfilled and resulted in a new resource being created. The newly created resource can be referenced by the URI(s) returned in the entity of the response, with the most specific URI for the resource given by a Location header field. The response SHOULD include an entity containing a list of resource characteristics and location(s) from which the user or user agent can choose the one most appropriate. The entity format is specified by the media type given in the Content-Type header field. The origin server MUST create the resource before returning the 201 status code. If the action cannot be carried out immediately, the server SHOULD respond with 202 (Accepted) response instead.</td>
+			</tr>
+			<tr>
+				<td>202</td>
+				<td>Accepted</td>
+				<td>The request has been accepted for processing, but the processing has not been completed. The request might or might not eventually be acted upon, as it might be disallowed when processing actually takes place. There is no facility for re-sending a status code from an asynchronous operation such as this.</td>
+			</tr>
+			<tr>
+				<td>400</td>
+				<td>Bad Request</td>
+				<td>The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modifications.</td>
+			</tr>
+			<tr>
+				<td>403</td>
+				<td>Forbidden</td>
+				<td>The server understood the request, but is refusing to fulfill it. Authorization will not help and the request SHOULD NOT be repeated. If the request method was not HEAD and the server wishes to make public why the request has not been fulfilled, it SHOULD describe the reason for the refusal in the entity. If the server does not wish to make this information available to the client, the status code 404 (Not Found) can be used instead.</td>
+			</tr>
+			<tr>
+				<td>406</td>
+				<td>Not Accepted</td>
+				<td>The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="mbl_tbl">
+	<h3>Quarry REST Response Code Description</h3>
+	<div class="odd_row">
+		<p class="mbl-strng">Code: 200</p>
+		<p><span class="mbl-strng">Text:</span> OK</p>
+		<p><span class="mbl-strng">Description:</span> Success!</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Code: 201</p>
+		<p><span class="mbl-strng">Text:</span> Created/POST</p>
+		<p><span class="mbl-strng">Description:</span> The request has been fulfilled and resulted in a new resource being created. The newly created resource can be referenced by the URI(s) returned in the entity of the response, with the most specific URI for the resource given by a Location header field. The response SHOULD include an entity containing a list of resource characteristics and location(s) from which the user or user agent can choose the one most appropriate. The entity format is specified by the media type given in the Content-Type header field. The origin server MUST create the resource before returning the 201 status code. If the action cannot be carried out immediately, the server SHOULD respond with 202 (Accepted) response instead.</p>
+	</div>
+	<div class="odd_row">
+		<p class="mbl-strng">Code: 202</p>
+		<p><span class="mbl-strng">Text:</span> Accepted</p>
+		<p><span class="mbl-strng">Description:</span> The request has been accepted for processing, but the processing has not been completed. The request might or might not eventually be acted upon, as it might be disallowed when processing actually takes place. There is no facility for re-sending a status code from an asynchronous operation such as this.</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Code: 400</p>
+		<p><span class="mbl-strng">Text:</span> Bad Request</p>
+		<p><span class="mbl-strng">Description:</span> The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modifications.</p>
+	</div>
+	<div class="odd_row">
+		<p class="mbl-strng">Code: 403</p>
+		<p><span class="mbl-strng">Text:</span> Forbidden</p>
+		<p><span class="mbl-strng">Description:</span> The server understood the request, but is refusing to fulfill it. Authorization will not help and the request SHOULD NOT be repeated. If the request method was not HEAD and the server wishes to make public why the request has not been fulfilled, it SHOULD describe the reason for the refusal in the entity. If the server does not wish to make this information available to the client, the status code 404 (Not Found) can be used instead.</p>
+	</div>
+	<div class="even_row">
+		<p class="mbl-strng">Code: 406</p>
+		<p><span class="mbl-strng">Text:</span> Not Accepted</p>
+		<p><span class="mbl-strng">Description:</span> The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.</p>
+	</div>
+</div>
   </section>
   </div>
 </div>
