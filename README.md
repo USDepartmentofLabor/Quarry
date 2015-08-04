@@ -21,6 +21,12 @@ PHP 5.3 for Framework
 MySQL 5.5
 Ruby Jekyll
 
+Contact Information
+-----------
+
+All questions, comments and suggestions can be submited to the [Department of Labor](https://github.com/USDepartmentofLabor/Quarry/issues) Github pages.
+
+
 ### Changelog 
 * Adjusted page layouts and positioning to correct minor bugs
 * Add Quarry API REST manual in the documentation tab
